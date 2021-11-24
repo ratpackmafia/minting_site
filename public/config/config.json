@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
-  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+  "CONTRACT_ADDRESS": "0x50ab2CDb06C196Ccf9A26Fd0DB01A702ee5CB909",
+  "SCAN_LINK": "https://testnet.ftmscan.com/token/0x50ab2cdb06c196ccf9a26fd0db01a702ee5cb909",
   "NETWORK": {
-    "NAME": "Polygon",
-    "SYMBOL": "Matic",
-    "ID": 137
+    "NAME": "Fantom",
+    "SYMBOL": "FTM",
+    "ID": 4002
   },
-  "NFT_NAME": "Nerdy Coder Clones",
-  "SYMBOL": "NCC",
-  "MAX_SUPPLY": 1000,
-  "WEI_COST": 75000000000000000,
-  "DISPLAY_COST": 0.075,
+  "NFT_NAME": "Rat Pack Mafia",
+  "SYMBOL": "RPM",
+  "MAX_SUPPLY": 2000,
+  "WEI_COST": 25000000000000000000,
+  "DISPLAY_COST": 25,
   "GAS_LIMIT": 285000,
-  "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
+  "MARKETPLACE": "Paintswap",
+  "MARKETPLACE_LINK": "https://paintswap.finance/collection/rat-pack-mafia",
   "SHOW_BACKGROUND": true
 }

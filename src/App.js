@@ -201,6 +201,7 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
+
         <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
@@ -263,7 +264,8 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  
+                  1 Rat will cost {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
@@ -282,7 +284,8 @@ function App() {
                         color: "var(--accent-text)",
                       }}
                     >
-                      Connect to the {CONFIG.NETWORK.NAME} network
+                      Comming soon to the {CONFIG.NETWORK.NAME} network
+                      
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
@@ -291,9 +294,13 @@ function App() {
                         dispatch(connect());
                         getData();
                       }}
+                      
                     >
-                      CONNECT
+                     
+                      
+                      CONNECT 
                     </StyledButton>
+                    
                     {blockchain.errorMsg !== "" ? (
                       <>
                         <s.SpacerSmall />
@@ -366,6 +373,7 @@ function App() {
                   </>
                 )}
               </>
+              
             )}
             <s.SpacerMedium />
           </s.Container>

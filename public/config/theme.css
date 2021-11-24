@@ -1,8 +1,20 @@
 :root {
-  --primary: #ebc908;
-  --primary-text: #1a1a1a;
-  --secondary: #ff1dec;
+  --primary: black;
+  --primary-text: #ffffff;
+  --secondary: #0400ff;
   --secondary-text: #ffffff;
-  --accent: #505050;
+  --accent: #a74040;
   --accent-text: #ffffff;
 }
+/*TexturesCom_MetalBare0043_S 2 */
+
+logo:
+position: absolute;
+width: 1445px;
+height: 1183px;
+left: 0px;
+top: 0px;
+
+background: url(.jpg);
+opacity: 0.5;
+filter: blur(14px);
