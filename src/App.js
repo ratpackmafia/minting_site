@@ -113,7 +113,7 @@ function App() {
     SYMBOL: "",
     MAX_SUPPLY: 1,
     WEI_COST: 0,
-    DISPLAY_COST: 0,
+    DISPLAY_COST: 1,
     GAS_LIMIT: 0,
     MARKETPLACE: "",
     MARKETPLACE_LINK: "",
