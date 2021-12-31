@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x411b33a3cA0C867990Bc93Bde37884f69626C4b9",
-  "SCAN_LINK": "https://testnet.ftmscan.com/token/0x411b33a3cA0C867990Bc93Bde37884f69626C4b9",
+  "CONTRACT_ADDRESS": "0x50ab2CDb06C196Ccf9A26Fd0DB01A702ee5CB909",
+  "SCAN_LINK": "https://testnet.ftmscan.com/token/0x50ab2CDb06C196Ccf9A26Fd0DB01A702ee5CB909",
   "NETWORK": {
     "NAME": "Fantom",
     "SYMBOL": "FTM",
@@ -9,8 +9,9 @@
   "NFT_NAME": "Rat Pack Mafia",
   "SYMBOL": "RPM",
   "MAX_SUPPLY": 30,
-  "WEI_COST": 1000000000000000000,
-  "DISPLAY_COST": 1,
+  "WEI_COST": 2000000000000000000,
+  
+  "DISPLAY_COST": 2,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Paintswap",
   "MARKETPLACE_LINK": "https://paintswap.finance/collection/rat-pack-mafia",

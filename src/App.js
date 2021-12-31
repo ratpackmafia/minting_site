@@ -74,6 +74,20 @@ export const StyledLogo = styled.img`
   transition: height 0.5s;
 `;
 
+export const StyledNavLogo = styled.img`
+  width: 40px;
+  height:40px;
+  margin-top:20px;
+  text-align:right !important;
+  @media (min-width: 767px) {
+    width: 50px;
+    height:50px;
+    margin-top:20px;
+    text-align:right !important;
+  }
+  transition: width 0.5s;
+  transition: height 0.5s;
+`;
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
   border: 4px dashed var(--secondary);
@@ -94,6 +108,22 @@ export const StyledLink = styled.a`
   text-decoration: none;
 `;
 
+export const StyledHero = styled.img`
+  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
+  border: 4px dashed var(--secondary);
+  background-color: var(--accent);
+  border-radius: 100%;
+  width: 200px;
+  @media (min-width: 900px) {
+    width: 250px;
+  }
+  @media (min-width: 1000px) {
+    width: 300px;
+  }
+  transition: width 0.5s;
+`;
+
+
 function App() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
@@ -113,7 +143,7 @@ function App() {
     SYMBOL: "",
     MAX_SUPPLY: 1,
     WEI_COST: 0,
-    DISPLAY_COST: 1,
+    DISPLAY_COST: 2022,
     GAS_LIMIT: 0,
     MARKETPLACE: "",
     MARKETPLACE_LINK: "",
@@ -145,7 +175,7 @@ function App() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit NFTKEY.app to view it.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -195,15 +225,100 @@ function App() {
 
   return (
     <s.Screen>
-      <s.Container
+      <ResponsiveWrapper flex={1} style={{ 'padding-left': 24 }}>
+
+      <s.Container flex={1} jc={"left"} ai={"left"}>
+
+    <ul class="navigation-bar">
+      <li>
+        <StyledLogo alt={"example"} src={"/config/images/logo.png"} style={{"margin-left":"15%"}} />
+      </li>
+      <li class="float">
+        <a class="twitter" href="#"><StyledNavLogo alt={"example"} src={"/config/images/twitter.png"}  /></a>
+      </li>
+      <li class="float">
+        <a class="discord" href="#"><StyledNavLogo alt={"example"} src={"/config/images/discord.png"} /></a>
+      </li>
+      
+    
+    </ul>
+
+
+            {/* <StyledLogo alt={"example"} src={"/config/images/logo.png"} />
+          </s.Container>
+          <s.SpacerLarge />
+          <s.Container flex={1} jc={"right"} ai={"right"} style={{'padding-top': 24}} >
+            <StyledLogo alt={"example"} src={"/config/images/twitter.png"} style={{ height:30, width:30 }} />
+          </s.Container>
+          <s.Container flex={1} jc={"right"} ai={"right"} >  
+            <StyledLogo alt={"example"} src={"/config/images/discord.png"}  style={{height:30, width:30}}  /> */}
+        
+        
+          </s.Container>
+          <s.SpacerLarge />
+    
+    </ResponsiveWrapper>      
+
+
+    <div id="bgimage" >
+        <div class="bgimagetop">
+          <img src="config/images/family_pic_top1.png" />
+        </div>
+        <div class="bgimagebot">
+          <img src="config/images/family_pic_bottom1.png" />
+        </div>
+      </div>
+
+
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div
+            class="
+              w-full
+              mt-56
+              md:mt-20
+              lg:w-6/12
+              px-4
+              ml-auto
+              mr-auto
+              justify-center
+              text-center
+            "
+          >
+            <div class="bg-gray-500 rounded-md sm:bg-transparent">
+              <h1
+                class="
+                  RPM-headline
+                  text-4xl
+                  md:text-5xl
+                  text-white
+                  font-semibold
+                "
+              >
+                <img src="/config/images/RatPackLogo.png" class="h-10" />
+              </h1>
+              <p class="RPM-sub mt-4 text-gray-300">
+                Coming soon to Fantom Opera
+              </p>
+             
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  
+        <s.Container
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+        
       >
+      
 
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
-        <s.SpacerSmall />
+
+
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />

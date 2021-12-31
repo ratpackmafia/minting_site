@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 // Used for wrapping a page component
 export const Screen = styled.div`
   background-color: var(--primary);
@@ -11,6 +13,14 @@ export const Screen = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+
+export const Nav = styled.div`
+  height: 100px;
+  justify: center;
+  fontsize: 20px;
+  background-color:blue;
+`
 
 // Used for providing space between components
 export const SpacerXSmall = styled.div`
@@ -74,3 +84,5 @@ export const StyledClickable = styled.div`
     opacity: 0.6;
   }
 `;
+
+
