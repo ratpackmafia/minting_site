@@ -260,7 +260,7 @@ function App() {
     </ResponsiveWrapper>      
 
 
-    <div id="bgimage" >
+    <div id="bgimage"  >
         <div class="bgimagetop">
           <img src="config/images/family_pic_top1.png" />
         </div>
@@ -268,44 +268,13 @@ function App() {
           <img src="config/images/family_pic_bottom1.png" />
         </div>
       </div>
+            
 
-
-      <div class="container relative mx-auto">
-        <div class="items-center flex flex-wrap">
-          <div
-            class="
-              w-full
-              mt-56
-              md:mt-20
-              lg:w-6/12
-              px-4
-              ml-auto
-              mr-auto
-              justify-center
-              text-center
-            "
-          >
-            <div class="bg-gray-500 rounded-md sm:bg-transparent">
-              <h1
-                class="
-                  RPM-headline
-                  text-4xl
-                  md:text-5xl
-                  text-white
-                  font-semibold
-                "
-              >
-                <img src="/config/images/RatPackLogo.png" class="h-10" />
-              </h1>
-              <p class="RPM-sub mt-4 text-gray-300">
-                Coming soon to Fantom Opera
-              </p>
-             
-
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="hero-text">
+    <p><img alt={"example"} src={"/config/images/RatPackLogo.png"} style={{"margin-left":"3%"}} /></p>
+    <h1>Coming soon</h1>
+    </div>
+      
 
 
   

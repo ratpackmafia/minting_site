@@ -90,32 +90,45 @@ width:20px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    
 }
 .hero-text{
     text-align: center;
   position: absolute;
+  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
+.RPM-text{
+    width:200px;
+}
 .hero p{
     color:white;
 }
 
-#bgimage{
-    border:1px solid black;
-
-}
-.bgimagetop img,.bgimagebot img{
+#bgimage img{
     padding:0px !important;
     margin:0px !important;
-    height: auto;
+
+    
+}
+.bgimagetop img{
+    width:500px;
+}
+.bgimagebot img{
+    width:500px;
+
+    padding:0px !important;
+    margin:0px !important;
+    
 }
 .bgimagetop{
     padding:0px !important;
     margin:0px !important;
-    background-size:200px;
+    background-size:150px;
+    height:552px;
     background-image: url("../images/brick.jpg");
     /* background-repeat: repeat; */
 }
@@ -124,4 +137,7 @@ width:20px;
     margin:0px !important;
     background-size:200px;
     background-color:rgb(68, 22, 14);
+}
+.RPM-Text{
+
 }
