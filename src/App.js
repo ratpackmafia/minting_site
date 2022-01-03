@@ -2,8 +2,13 @@ import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
-import * as s from "./styles/globalStyles";
+import * as s from "./style/globalStyles";
 import styled from "styled-components";
+import './fontawesome';
+
+import { FontAwesome, FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
+ 
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -90,7 +95,7 @@ export const StyledNavLogo = styled.img`
 `;
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
+  border: 4px solid black;
   background-color: var(--accent);
   border-radius: 100%;
   width: 200px;
@@ -102,6 +107,21 @@ export const StyledImg = styled.img`
   }
   transition: width 0.5s;
 `;
+
+export const StyledSquareImg = styled.img`
+  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
+  border: 14px solid black;
+  background-color: var(--accent);
+  border-radius: 8%;
+  width: 200px;
+  @media (min-width: 900px) {
+    width: 250px;
+  }
+  @media (min-width: 1000px) {
+    width: 300px;
+  }
+  transition: width 0.5s;
+`; 
 
 export const StyledLink = styled.a`
   color: var(--secondary);
@@ -225,69 +245,697 @@ function App() {
 
   return (
     <s.Screen>
-      <ResponsiveWrapper flex={1} style={{ 'padding-left': 24 }}>
-
-      <s.Container flex={1} jc={"left"} ai={"left"}>
-
-    <ul class="navigation-bar">
-      <li>
-        <StyledLogo alt={"example"} src={"/config/images/logo.png"} style={{"margin-left":"15%"}} />
-      </li>
-      <li class="float">
-        <a class="twitter" href="#"><StyledNavLogo alt={"example"} src={"/config/images/twitter.png"}  /></a>
-      </li>
-      <li class="float">
-        <a class="discord" href="#"><StyledNavLogo alt={"example"} src={"/config/images/discord.png"} /></a>
-      </li>
       
-    
-    </ul>
+{/* NAV  */}
+      <nav
+    class="
+      top-0
+      absolute
+      z-50
+      w-full
+      flex flex-wrap
+      items-center
+      justify-between
+      bg-black
+      sticky
+    "
+  >
+    <div
+      class="container mx-auto flex flex-wrap items-center justify-between"
+    >
+      <div
+        class="
+          w-full
+          relative
+          flex
+          justify-between
+          lg:w-auto lg:static lg:block lg:justify-start
+        "
+      ></div>
+</div>
 
+<a
+          class="
+            text-sm
+            font-bold
+            leading-relaxed
+            inline-block
+            
+            ml-20
+            whitespace-nowrap
+            uppercase
+            text-white
+          "
+          href="index.html"
+          >
+            <img src="/config/images/RatPackLogo.png" class="h-10" />
+            </a>
+          <ul class="bg-black">
+            <li class="
+            
+            text-sm
+            font-bold
+            leading-relaxed
+            inline-block
+            
+            whitespace-nowrap
+            uppercase
+            text-white
+          ">
+            <a class="
+            text-sm
+            font-bold
+            leading-relaxed
+            inline-block
+            
+            whitespace-nowrap
+            uppercase
+            text-white
+          "
+           href="https://twitter.com/Ratpackmafia">
+              <StyledNavLogo alt={"example"} src={"/config/images/twitter.png"}  style={{width:40, height:40}} />
+              </a>
+            </li>
+            <li class="
+            text-sm
+            font-bold
+            leading-relaxed
+            inline-block
+            mr-20
+            whitespace-nowrap
+            uppercase
+            text-white
+          ">
+            <a href="https://discord.gg/5V38qceDjA" 
+            class="
+            text-sm
+            font-bold
+            leading-relaxed
+            inline-block
+            
+            whitespace-nowrap
+            uppercase
+            text-white
+          "
+>
+              <StyledNavLogo alt={"example"} src={"/config/images/discord.png"}  style={{width:35, height:35}}/>
+              </a>
+            </li>
+          </ul>
 
-            {/* <StyledLogo alt={"example"} src={"/config/images/logo.png"} />
-          </s.Container>
-          <s.SpacerLarge />
-          <s.Container flex={1} jc={"right"} ai={"right"} style={{'padding-top': 24}} >
-            <StyledLogo alt={"example"} src={"/config/images/twitter.png"} style={{ height:30, width:30 }} />
-          </s.Container>
-          <s.Container flex={1} jc={"right"} ai={"right"} >  
-            <StyledLogo alt={"example"} src={"/config/images/discord.png"}  style={{height:30, width:30}}  /> */}
-        
-        
-          </s.Container>
-          <s.SpacerLarge />
-    
-    </ResponsiveWrapper>      
+    </nav>
 
+    {/* end Nav */}
+    {/* start Hero image */}
 
-    <div id="bgimage"  >
+    <div
+      class="
+        relative
+        pt-10
+        pb-40
+        flex
+        content-center
+        items-center
+        justify-center
+      "
+      
+    >
+      <div id="bgimage" class="absolute top-0 w-full h-full bg-left bg-cover">
         <div class="bgimagetop">
-          <img src="config/images/family_pic_top1.png" />
+          <img src="/config/images/family_pic_top1.png" />
         </div>
         <div class="bgimagebot">
-          <img src="config/images/family_pic_bottom1.png" />
+          <img src="/config/images/family_pic_bottom1.png" />
         </div>
       </div>
-            
-
-    <div class="hero-text">
-    <p><img alt={"example"} src={"/config/images/RatPackLogo.png"} style={{"margin-left":"3%"}} /></p>
-    <h1>Coming soon</h1>
-    </div>
+      
       
 
+      {/* end HERO image*/}
+      {/* Start Hero Text */}
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap"  style={{'margin-left':'20%'}}>
+          <div
+            class="
+              w-full
+              lg:w-4/5
+              px-4
+              ml-auto
+              mr-auto
+              justify-center
+              text-center
+            "
+            
+          >
+            <div class="bg-gray-500  rounded-md sm:bg-transparent">
+              <h1
+                class="
+                  RPM-headline
+                  text-4xl
+                  md:text-5xl
+                  text-white
+                  font-semibold
+                "
+              >
+                
+                <img src="./config/images/RatPackLogo.png" class="h-15" />
+              </h1>
+              
+              <p class="RPM-sub mt-4 text-gray-300" >
+                
+    <div style={{
+              backgroundColor: "rgba(0,0,0,0.8)",
+              padding: 24,
+              borderRadius: 24,
+              border: "4px solid black",
+              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+            }}>
+              
+            <s.TextTitle
+              style={{
+                textAlign: "center",
+                fontSize: 50,
+                fontWeight: "bold",
+                color: "var(--accent-text)",
+              }}
+            >
+              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+            </s.TextTitle>
+            <s.TextDescription
+              style={{
+                textAlign: "center",
+                color: "var(--primary-text)",
+              }}
+            >
+              
+            </s.TextDescription>
+            <s.SpacerSmall />
+            {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
+              <>
+                <s.TextTitle
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  The sale has ended.
+                </s.TextTitle>
+                <s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  You can still find {CONFIG.NFT_NAME} on
+                </s.TextDescription>
+                <s.SpacerSmall />
+                <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+                  {CONFIG.MARKETPLACE}
+                </StyledLink>
+              </>
+            ) : (
+              <>
+                <s.TextTitle
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  
+                  1 Rat will cost {CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.NETWORK.SYMBOL}.
+                </s.TextTitle>
+                <s.SpacerXSmall />
+                <s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  Excluding gas fees.
+                </s.TextDescription>
+                <s.SpacerSmall />
+                {blockchain.account === "" ||
+                blockchain.smartContract === null ? (
+                  <s.Container ai={"center"} jc={"center"}>
+                    <s.TextDescription
+                      style={{
+                        textAlign: "center",
+                        color: "var(--accent-text)",
+                      }}
+                    >
+                      Comming soon to the {CONFIG.NETWORK.NAME} network
+                      
+                    </s.TextDescription>
+                    <s.SpacerSmall />
+                    <StyledButton
+                      onClick={(e) => {
+                        e.preventDefault();
+                        dispatch(connect());
+                        getData();
+                      }}
+                      
+                    >
+                     
+                      
+                      CONNECT 
+                    </StyledButton>
+                    <s.SpacerLarge />
+                    <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
+                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
+              </StyledLink>
+                    {blockchain.errorMsg !== "" ? (
+                      <>
+                        <s.SpacerSmall />
+                        <s.TextDescription
+                          style={{
+                            textAlign: "center",
+                            color: "var(--accent-text)",
+                          }}
+                        >
+                          {blockchain.errorMsg}
+                        </s.TextDescription>
+                      </>
+                    ) : null}
+                  </s.Container>
+                ) : (
+                  <>
+                    <s.TextDescription
+                      style={{
+                        textAlign: "center",
+                        color: "var(--accent-text)",
+                      }}
+                    >
+                      {feedback}
+                    </s.TextDescription>
+                    <s.SpacerMedium />
+                    <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                      <StyledRoundButton
+                        style={{ lineHeight: 0.4 }}
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          decrementMintAmount();
+                        }}
+                      >
+                        -
+                      </StyledRoundButton>
+                      <s.SpacerMedium />
+                      <s.TextDescription
+                        style={{
+                          textAlign: "center",
+                          color: "var(--accent-text)",
+                        }}
+                      >
+                        {mintAmount}
+                      </s.TextDescription>
+                      <s.SpacerMedium />
+                      <StyledRoundButton
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          incrementMintAmount();
+                        }}
+                      >
+                        +
+                      </StyledRoundButton>
+                    </s.Container>
+                    <s.SpacerSmall />
+                    <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                      <StyledButton
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          claimNFTs();
+                          getData();
+                        }}
+                      >
+                        {claimingNft ? "BUSY" : "BUY"}
+                      </StyledButton>
+                    </s.Container>
+                  </>
+                )}
+              </>
+              
+            )}
+            </div>
 
-  
-        <s.Container
+
+
+
+
+
+              </p>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="pt-20 mt-10 pb-20 bg-gray-700 -mt-10">
+      <div class="container mx-auto px-2">
+        <div class="flex flex-wrap">
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-6 text-center">
+            <div
+              class="
+                relative
+                flex flex-col
+                min-w-0
+                break-words
+                bg-black
+                w-full
+                mb-8
+                shadow-lg
+                rounded-lg
+              "
+            >
+              <div class="px-4 py-5 flex-auto">
+                <p class="mt-2 mb-4 text-gray-600">
+                  <img src="/config/images/1.jpg" class="w-full" />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-4/12 px-6 text-center ">
+            <div
+              class="
+                relative
+                flex flex-col
+                min-w-0
+                break-words
+                bg-black
+                w-full
+                mb-8
+                shadow-lg
+                rounded-lg
+              "
+            >
+              <div class="px-4 py-5 flex-auto">
+                <p class="mt-2 mb-4 text-gray-600">
+                  <img src="/config/images/2.jpg" class="w-full" />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-6 mx-0 text-center">
+            <div
+              class="
+                relative
+                flex flex-col
+                min-w-0
+                break-words
+                bg-black
+                w-full
+                mb-8
+                shadow-lg
+                rounded-lg
+              "
+            >
+              <div class="px-4 py-5 flex-auto">
+                <p class="mt-2 mb-4 text-gray-600">
+                  <img src="/config/images/3.jpg" class="w-full"/>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center mt-32">
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+            <div
+              class="
+                text-gray-600
+                p-3
+                text-center
+                inline-flex
+                items-center
+                justify-center
+                w-16
+                h-16
+                mb-6
+                shadow-lg
+                rounded-full
+                bg-gray-100
+              "
+            >
+              <FontAwesomeIcon icon={ faUserFriends }></FontAwesomeIcon>
+            </div>
+            <h3
+              class="text-3xl text-gray-200 mb-2 font-semibold leading-normal"
+            >
+              About
+            </h3>
+            <p
+              class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-200"
+            >
+              Rat Pack Mafia is a Family of Rats carving out a place in the
+              world, fighting their way to the top.  
+            </p>
+          </div>
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+            <div
+              class="
+                relative
+                flex flex-col
+                min-w-0
+                break-words
+                bg-black
+                w-full
+                mb-6
+                shadow-lg
+                rounded-lg
+                bg-pink-600
+              "
+            >
+              <img
+                alt="..."
+                src="/config/images/rats.gif"
+                class="w-full align-middle rounded-t-lg"
+              />
+              <blockquote class="relative p-8 mb-4">
+                <svg
+                  preserveAspectRatio="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 583 95"
+                  class="absolute left-0 w-full block"
+                  // style="height: 95px; top: -94px"
+                >
+                  <polygon
+                    points="-30,95 583,95 583,65"
+                    class="text-pink-600 fill-current"
+                  ></polygon>
+                </svg>
+                <h3 class="text-center text-4xl font-bold text-white">
+                 Soon....
+                </h3>
+                <p class="text-md  font-light mt-2 text-white"></p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--primary)" }}
+        style={{ padding: 2, backgroundColor: "rgb(178 209 255 / 40%)"}}
         
       >
       
 
 
 
+        <ResponsiveWrapper flex={1} style={{ padding: 2 }} >
+          <s.Container flex={1} jc={"center"} ai={"center"} style={{'margin-bottom':20}}>
+          
+          <img class="example-pic" 
+            alt={"example"} 
+            src={"/config/images/1.jpg"}
+            />
+          </s.Container>
+          
+          <s.Container flex={1} jc={"center"} ai={"center"} style={{'margin-bottom':20}} >
+          <img class="example-pic" 
+              alt={"example"}
+              src={"/config/images/2.jpg"}
+            />
+          </s.Container>
+          
+          <s.Container flex={1} jc={"center"} ai={"center"} style={{'margin-bottom':20}}>
+          
+          <img class="example-pic" 
+              alt={"example"}
+              src={"/config/images/3.jpg"}
+            />
+          </s.Container>
+        </ResponsiveWrapper>
+
+            <ResponsiveWrapper>
+              <s.Container flex={1} jc={"center"} ai={"center"} style={{'margin-bottom':20}}></s.Container>
+
+
+            </ResponsiveWrapper>
+
+
+
+
+
+
+
+            <section class="pt-20 pb-48">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-gray-400 text-4xl font-semibold">
+            Testimonials...  
+            </h2>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="/config/images/5.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style={{"max-width": 120}}
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-gray-400">Michael Ratleon</h5>
+                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
+                  KEEP YOUR FRIENDS CLOSE, BUT YOUR CHEESE CLOSER.
+                </p>
+                <div class="mt-6"></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="/config/images/6.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style={{"max-width": 120}}
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-gray-400">Peter Ratenza</h5>
+                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
+                  LEAVE THE GUN, TAKE THE CHEESE
+                </p>
+                <div class="mt-6"></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="/config/images/7.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style={{"max-width": 120}}
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-gray-400">Michael Ratleon</h5>
+                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
+                  JUST WHEN I THOUGHT I WAS OUT, THE CHEESE PULLs ME BACK IN
+                </p>
+                <div class="mt-6"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="/config/images/8.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style={{"max-width": 120}}
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-gray-400">Rattie Brasco</h5>
+                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
+                  Forget About it!
+                </p>
+                <div class="mt-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+{/* 
+
+        <s.SpacerMedium />
+        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--primary-text)",
+            }}
+          >
+            Please make sure you are connected to the right network (
+            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
+            Once you make the purchase, you cannot undo this action.
+          </s.TextDescription>
+          <s.SpacerSmall />
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--primary-text)",
+            }}
+          >
+            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
+            successfully mint your NFT. We recommend that you don't lower the
+            gas limit.
+          </s.TextDescription>
+        </s.Container>
+      </s.Container> 
+
+
+
+
+
+
+
+
+
+
+
+        <s.Container
+        flex={1}
+        ai={"center"}
+        style={{ padding: 24, backgroundColor: "var(--primary)" }}
+        
+      >
+       */}
+
+
+{/* 
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
@@ -469,7 +1117,7 @@ function App() {
               style={{ transform: "scaleX(-1)" }}
             />
           </s.Container>
-        </ResponsiveWrapper>
+        </ResponsiveWrapper> 
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
           <s.TextDescription
@@ -493,7 +1141,7 @@ function App() {
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
           </s.TextDescription>
-        </s.Container>
+        </s.Container>*/}
       </s.Container>
     </s.Screen>
   );

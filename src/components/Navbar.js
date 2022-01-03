@@ -1,28 +1,19 @@
 import React from 'react';
 
 
+
 export default function Navbar() {
     return (
-        <nav>
-            <ul>
-                <li >
-                    <a href="" >
-                        <img src="/config/images/RatPackLogo.png"  />
-                    </a>
-                </li>
-
-                <li>
-                    <a href="" >
-                        <img src="/config/images/twitter.png" />
-                    </a>
-                </li>
-
-                <li>
-                    <a href="" >
-                        <img src="/config/images/discord.png" />
-                    </a>
-                </li>
-            </ul>
-        </nav>
+       <ul class="navigation-bar">
+      <li>
+        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} style={{"margin-left":"15%"}} />
+      </li>
+      <li class="float">
+        <a class="twitter" href="#"><StyledNavLogo alt={"twitter"} src={"/config/images/twitter.png"}  /></a>
+      </li>
+      <li class="float">
+        <a class="discord" href="#"><StyledNavLogo alt={"discord"} src={"/config/images/discord.png"} /></a>
+      </li>
+    </ul>
     );
 }

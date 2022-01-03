@@ -5,8 +5,11 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
 import { Provider } from "react-redux";
-import "./styles/reset.css";
-import "./styles/input.css";
+import "./style/reset.css";
+import "./style/old_index.css";
+import "./index.css";
+import './fontawesome';
+
 
 
 ReactDOM.render(

@@ -4,6 +4,12 @@
   "description": "HashLips minting dapp is a quick and easy way to connect your smart contract and start minting NFTs.",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
     "components": "^0.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -21,8 +27,11 @@
   "author": "Daniel Eugene Botha (HashLips)",
   "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "build:css": "postcss src/style/tailwind.css -o src/style/main.css",
+    "build:watch": "postcss src/style/tailwind.css -o src/style/main. --"
   },
   "browserslist": {
     "production": [
@@ -37,9 +46,9 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.1",
-    "postcss": "^8.4.5",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
     "tailwind-styled-components": "^2.0.3",
-    "tailwindcss": "^3.0.8"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
