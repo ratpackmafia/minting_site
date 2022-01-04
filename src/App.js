@@ -8,7 +8,12 @@ import './fontawesome';
 
 import { FontAwesome, FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
- 
+import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import { faCheese } from "@fortawesome/free-solid-svg-icons";
+import { faFingerprint } from "@fortawesome/free-solid-svg-icons";
+
+
+import { faFlagCheckered } from "@fortawesome/free-solid-svg-icons";
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -582,6 +587,7 @@ function App() {
       </div>
      
     </div>
+    
 
 
 
@@ -589,168 +595,7 @@ function App() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <section class="pt-20 mt-10 pb-20 bg-gray-700 -mt-10">
-      <div class="container mx-auto px-2">
-        <div class="flex flex-wrap">
-          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-6 text-center">
-            <div
-              class="
-                relative
-                flex flex-col
-                min-w-0
-                break-words
-                bg-black
-                w-full
-                mb-8
-                shadow-lg
-                rounded-lg
-              "
-            >
-              <div class="px-4 py-5 flex-auto">
-                <p class="mt-2 mb-4 text-gray-600">
-                  <img src="/config/images/1.jpg" class="w-full" />
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-4/12 px-6 text-center ">
-            <div
-              class="
-                relative
-                flex flex-col
-                min-w-0
-                break-words
-                bg-black
-                w-full
-                mb-8
-                shadow-lg
-                rounded-lg
-              "
-            >
-              <div class="px-4 py-5 flex-auto">
-                <p class="mt-2 mb-4 text-gray-600">
-                  <img src="/config/images/2.jpg" class="w-full" />
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-6 mx-0 text-center">
-            <div
-              class="
-                relative
-                flex flex-col
-                min-w-0
-                break-words
-                bg-black
-                w-full
-                mb-8
-                shadow-lg
-                rounded-lg
-              "
-            >
-              <div class="px-4 py-5 flex-auto">
-                <p class="mt-2 mb-4 text-gray-600">
-                  <img src="/config/images/3.jpg" class="w-full"/>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap items-center mt-32">
-          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-            <div
-              class="
-                text-gray-600
-                p-3
-                text-center
-                inline-flex
-                items-center
-                justify-center
-                w-16
-                h-16
-                mb-6
-                shadow-lg
-                rounded-full
-                bg-gray-100
-              "
-            >
-              <FontAwesomeIcon icon={ faUserFriends }></FontAwesomeIcon>
-            </div>
-            <h3
-              class="text-3xl text-gray-200 mb-2 font-semibold leading-normal"
-            >
-              About
-            </h3>
-            <p
-              class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-200"
-            >
-              Rat Pack Mafia is a Family of Rats carving out a place in the
-              world, fighting their way to the top.  
-            </p>
-          </div>
-          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-            <div
-              class="
-                relative
-                flex flex-col
-                min-w-0
-                break-words
-                bg-black
-                w-full
-                mb-6
-                shadow-lg
-                rounded-lg
-                bg-pink-600
-              "
-            >
-              <img
-                alt="..."
-                src="/config/images/rats.gif"
-                class="w-full align-middle rounded-t-lg"
-              />
-              <blockquote class="relative p-8 mb-4">
-                <svg
-                  preserveAspectRatio="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 583 95"
-                  class="absolute left-0 w-full block"
-                  // style="height: 95px; top: -94px"
-                >
-                  <polygon
-                    points="-30,95 583,95 583,65"
-                    class="text-pink-600 fill-current"
-                  ></polygon>
-                </svg>
-                <h3 class="text-center text-4xl font-bold text-white">
-                 Soon....
-                </h3>
-                <p class="text-md  font-light mt-2 text-white"></p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
+{/*  
 
     <s.Container
         flex={1}
@@ -794,12 +639,176 @@ function App() {
             </ResponsiveWrapper>
 
 
+            <section class="relative py-20 w-full">
+
+
+      <div
+        class="
+          bottom-auto
+          
+          top-0
+          left-0
+          right-0
+          w-full
+          absolute
+          pointer-events-none
+          overflow-hidden
+          bg-gray-700
+          -mt-20
+        "
+        style={{height: 80}}
+              >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-black fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <img
+              alt="..."
+              class="max-w-full rounded-lg shadow-lg"
+              src="/config/images/4.jpg"
+            />
+          </div>
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div class="md:pr-12">
+              <div
+                class="
+                  mt-6
+                  md:mt-0
+                  text-pink-600
+                  p-3
+                  text-center
+                  inline-flex
+                  items-center
+                  justify-center
+                  w-16
+                  h-16
+                  mb-6
+                  shadow-lg
+                  rounded-full
+                  bg-pink-300
+                "
+              >
+                <i class="fas fa-rocket text-xl"></i>
+              </div>
+              <h3 class="text-gray-400 text-3xl font-semibold">Minting Soon</h3>
+              <p class="mt-4 text-lg leading-relaxed text-gray-200">
+                Every Rat in the Pack Mafia is hand crafted with in blender3D to have different levels of rarity and
+                features. There are only 3000 available so get them before they
+                are gone! And at 20 FTM each it's surely an offer you cannot
+                refuse! Rat Pack mafia, when youre here, you're Family!
+              </p>
+
+              <ul class="list-none mt-6">
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="
+                          text-xs
+                          font-semibold
+                          inline-block
+                          py-1
+                          px-2
+                          uppercase
+                          rounded-full
+                          text-pink-600
+                          bg-pink-200
+                          mr-3
+                        "
+                        ><i class="fas fa-flag-checkered"></i
+                      ></span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-200">
+                        Meticulously crafted attributes
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="
+                          text-xs
+                          font-semibold
+                          inline-block
+                          py-1
+                          px-2
+                          uppercase
+                          rounded-full
+                          text-pink-600
+                          bg-pink-200
+                          mr-3
+                        "
+                        ><i class="fas fa-cheese"></i
+                      ></span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-200">Stupendously cheesy Rats</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="
+                          text-xs
+                          font-semibold
+                          inline-block
+                          py-1
+                          px-2
+                          uppercase
+                          rounded-full
+                          text-pink-600
+                          bg-pink-200
+                          mr-3
+                        "
+                        ><i class="fas fa-fingerprint"></i
+                      ></span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-200">
+                        Dynamicaly generated with no duplicates
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <p class="mt-12 text-lg leading-relaxed text-gray-200">
+              These rats won't steal your cheese... or will they???
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
 
 
-            <section class="pt-20 pb-48">
+{/* minting soon */}
+{/* 
+
+
+
+            <section class="pt-20 pb-48 ">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap justify-center text-center mb-24">
           <div class="w-full lg:w-6/12 px-4">
@@ -882,13 +891,61 @@ function App() {
       </div>
     </section>
 
+    <footer class="w-full relative bg-gray-700 pt-8 pb-6">
+    <div
+      class="
+        bottom-auto
+        top-0
+        left-0
+        right-0
+        w-full
+        absolute
+        pointer-events-none
+        overflow-hidden
+        -mt-20
+      "
+      style={{height: 80}}
+    >
+      <svg
+        class="absolute bottom-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        y="0"
+      >
+        <polygon
+          class="text-gray-700 fill-current"
+          points="2560 0 2560 100 0 100"
+        ></polygon>
+      </svg>
+    </div>
+
+    <div class="container mx-auto px-4">
+      <div
+        class="flex flex-wrap items-center md:justify-between justify-center"
+      >
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-gray-200 font-semibold py-1">
+            Copyright © 2021 
+            <a
+              href="https://twitter.com/Ratpackmafia"
+              class="text-gray-200 hover:text-gray-900"
+              >Rat Pack Mafia</a
+            >.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
 
 
 
-{/* 
+{
 
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
@@ -932,10 +989,6 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         
       >
-       */}
-
-
-{/* 
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
@@ -1142,7 +1195,470 @@ function App() {
             gas limit.
           </s.TextDescription>
         </s.Container>*/}
-      </s.Container>
+      {/* </s.Container> */}
+
+
+
+
+
+
+
+
+      <section class="pt-20 pb-20 bg-gray-700 -mt-0">
+      <div class="container mx-auto px-2">
+        <div class="flex flex-wrap">
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-6 text-center">
+            <div
+              class="
+                relative
+                flex flex-col
+                min-w-0
+                break-words
+                bg-black
+                w-full
+                mb-8
+                shadow-lg
+                rounded-lg
+              "
+            >
+              <div class="px-4 py-5 flex-auto">
+                <p class="mt-2 mb-4 text-gray-600">
+                  <img src="/config/images/1.jpg" class="w-full" />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-4/12 px-6 text-center ">
+            <div
+              class="
+                relative
+                flex flex-col
+                min-w-0
+                break-words
+                bg-black
+                w-full
+                mb-8
+                shadow-lg
+                rounded-lg
+              "
+            >
+              <div class="px-4 py-5 flex-auto">
+                <p class="mt-2 mb-4 text-gray-600">
+                  <img src="/config/images/2.jpg" class="w-full" />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-6 mx-0 text-center">
+            <div
+              class="
+                relative
+                flex flex-col
+                min-w-0
+                break-words
+                bg-black
+                w-full
+                mb-8
+                shadow-lg
+                rounded-lg
+              "
+            >
+              <div class="px-4 py-5 flex-auto">
+                <p class="mt-2 mb-4 text-gray-600">
+                  <img src="/config/images/3.jpg" class="w-full"/>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center mt-32">
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+            <div
+              class="
+                text-gray-600
+                p-3
+                text-center
+                inline-flex
+                items-center
+                justify-center
+                w-16
+                h-16
+                mb-6
+                shadow-lg
+                rounded-full
+                bg-gray-100
+              "
+            >
+              <FontAwesomeIcon icon={faUserFriends}></FontAwesomeIcon>
+            </div>
+            <h3
+              class="text-3xl text-gray-200 mb-2 font-semibold leading-normal"
+            >
+              About
+            </h3>
+            <p
+              class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-200"
+            >
+              Rat Pack Mafia is a Family of Rats carving out a place in the
+              world, fighting their way to the top.  
+            </p>
+          </div>
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+            <div
+              class="
+                relative
+                flex flex-col
+                min-w-0
+                break-words
+                bg-black
+                w-full
+                mb-6
+                shadow-lg
+                rounded-lg
+                bg-pink-600
+              "
+            >
+              <img
+                alt="..."
+                src="/config/images/rats.gif"
+                class="w-full align-middle rounded-t-lg"
+              />
+              <blockquote class="relative p-8 mb-4">
+                <svg
+                  preserveAspectRatio="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 583 95"
+                  class="absolute left-0 w-full block"
+                  style={{height: 95, top: "-94"}}
+                >
+                  <polygon
+                    points="-30,95 583,95 583,65"
+                    class="text-pink-600 fill-current"
+                  ></polygon>
+                </svg>
+                <h3 class="text-center text-4xl font-bold text-white">
+                 Soon....
+                </h3>
+                <p class="text-md  font-light mt-2 text-white"></p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative py-20">
+      <div
+        class="
+          bottom-auto
+          top-0
+          left-0
+          right-0
+          w-full
+          absolute
+          pointer-events-none
+          overflow-hidden
+          bg-gray-700
+          -mt-20
+        "
+        style={{height: 80}}
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-black fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <img
+              alt="..."
+              class="max-w-full rounded-lg shadow-lg"
+              src="/config/images/4.jpg"
+            />
+          </div>
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div class="md:pr-12">
+              <div
+                class="
+                  mt-6
+                  md:mt-0
+                  text-pink-600
+                  p-3
+                  text-center
+                  inline-flex
+                  items-center
+                  justify-center
+                  w-16
+                  h-16
+                  mb-6
+                  shadow-lg
+                  rounded-full
+                  bg-pink-300
+                "
+              >
+                <i class="fas fa-rocket text-xl"></i>
+                <FontAwesomeIcon icon={faRocket}></FontAwesomeIcon>
+              </div>
+              <h3 class="text-gray-400 text-3xl font-semibold">Minting Soon</h3>
+              <p class="mt-4 text-lg leading-relaxed text-gray-200">
+                Every Rat in the Pack Mafia is hand crafted with in blender3D to have different levels of rarity and
+                features. There are only 3000 available so get them before they
+                are gone! And at 20 FTM each it's surely an offer you cannot
+                refuse! Rat Pack mafia, when youre here, you're Family!
+              </p>
+
+              <ul class="list-none mt-6">
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="
+                          text-xs
+                          font-semibold
+                          inline-block
+                          py-1
+                          px-2
+                          uppercase
+                          rounded-full
+                          text-pink-600
+                          bg-pink-200
+                          mr-3
+                        "
+                        >
+                          <FontAwesomeIcon icon={faFlagCheckered}></FontAwesomeIcon>
+                          <i class="fas fa-flag-checkered"></i
+                      ></span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-200">
+                        Meticulously crafted attributes
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="
+                          text-xs
+                          font-semibold
+                          inline-block
+                          py-1
+                          px-2
+                          uppercase
+                          rounded-full
+                          text-pink-600
+                          bg-pink-200
+                          mr-3
+                        "
+                        
+                        ><FontAwesomeIcon icon={faCheese}></FontAwesomeIcon>
+                          <i class="fas fa-cheese"></i
+                      ></span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-200">Stupendously cheesy Rats</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="
+                          text-xs
+                          font-semibold
+                          inline-block
+                          py-1
+                          px-2
+                          uppercase
+                          rounded-full
+                          text-pink-600
+                          bg-pink-200
+                          mr-3
+                        "
+                        >
+                          <FontAwesomeIcon icon={faFingerprint}></FontAwesomeIcon></span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-200">
+                        Dynamicaly generated with no duplicates
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <p class="mt-12 text-lg leading-relaxed text-gray-200">
+              These rats won't steal your cheese... or will they???
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Testimonials */}
+    <section class="pt-20 pb-48">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-gray-400 text-4xl font-semibold">
+            Testimonials...  
+            </h2>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="/config/images/5.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style={{"max-width": 120}}
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-gray-400">Michael Ratleon</h5>
+                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
+                  KEEP YOUR FRIENDS CLOSE, BUT YOUR CHEESE CLOSER.
+                </p>
+                <div class="mt-6"></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="/config/images/6.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style={{"max-width": 120}}
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-gray-400">Peter Ratenza</h5>
+                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
+                  LEAVE THE GUN, TAKE THE CHEESE
+                </p>
+                <div class="mt-6"></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="/config/images/7.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style={{"max-width": 120}}
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-gray-400">Michael Ratleon</h5>
+                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
+                  JUST WHEN I THOUGHT I WAS OUT, THE CHEESE PULLs ME BACK IN
+                </p>
+                <div class="mt-6"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="/config/images/8.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style={{"max-width": 120}}
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-gray-400">Rattie Brasco</h5>
+                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
+                  Forget About it!
+                </p>
+                <div class="mt-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{/* FOOTER */}
+
+    <footer class="relative bg-gray-700 pt-8 pb-6">
+    <div
+      class="
+        bottom-auto
+        top-0
+        left-0
+        right-0
+        w-full
+        absolute
+        pointer-events-none
+        overflow-hidden
+        -mt-20
+      "
+      style={{"height": 80}}
+    >
+      <svg
+        class="absolute bottom-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        y="0"
+      >
+        <polygon
+          class="text-gray-700 fill-current"
+          points="2560 0 2560 100 0 100"
+        ></polygon>
+      </svg>
+    </div>
+
+    <div class="container mx-auto px-4">
+      <div
+        class="flex flex-wrap items-center md:justify-between justify-center"
+      >
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-gray-200 font-semibold py-1">
+            Copyright © 2021 
+            <a
+              href="https://twitter.com/zombiestiltskin"
+              class="text-gray-200 hover:text-gray-900"
+              >Rat Pack Mafia</a
+            >.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </s.Screen>
   );
 }
