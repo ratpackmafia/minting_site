@@ -11,6 +11,8 @@ import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import { faCheese } from "@fortawesome/free-solid-svg-icons";
 import { faFingerprint } from "@fortawesome/free-solid-svg-icons";
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 
 import { faFlagCheckered } from "@fortawesome/free-solid-svg-icons";
@@ -252,7 +254,7 @@ function App() {
     <s.Screen>
       
 {/* NAV  */}
-      <nav
+      {/* <nav
     class="
       top-0
       absolute
@@ -348,10 +350,118 @@ function App() {
             </li>
           </ul>
 
-    </nav>
+    </nav> */}
 
     {/* end Nav */}
     {/* start Hero image */}
+
+    <nav
+    class="
+      top-0
+      absolute
+      z-50
+      w-full
+      flex flex-wrap
+      items-center
+      justify-between
+      px-2
+      py-3
+      bg-black
+      sticky
+    "
+  >
+    <div
+      class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+    >
+      <div
+        class="
+          w-full
+          relative
+          flex
+          justify-between
+          lg:w-auto lg:static lg:block lg:justify-start
+        "
+      >
+        <a
+          class="
+            text-sm
+            font-bold
+            leading-relaxed
+            inline-block
+            mr-4
+            py-2
+            whitespace-nowrap
+            uppercase
+            text-white
+          "
+          href="index.html"
+          ><img src="/config/images/RatPackLogo.png" class="h-10" /></a
+        >
+      </div>
+      <div
+        class="
+          lg:flex
+          flex-grow
+          items-center
+          bg-black          
+        "
+        
+      >
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto bg-black
+">
+          <li class="flex items-center">
+          <a href="https://discord.gg/5V38qceDjA" 
+            class="
+            text-sm
+            font-bold
+            leading-relaxed
+            inline-block
+            pb-5
+            
+            whitespace-nowrap
+            uppercase
+            text-white
+          "
+>
+              <StyledNavLogo alt={"example"} src={"/config/images/discord.png"}  style={{width:30, height:30,}}/>
+              </a>
+
+
+
+
+          </li>
+
+          <li class="flex items-center">
+          <a class="
+            text-sm
+            font-bold
+            leading-relaxed
+            inline-block
+            pb-5
+
+            whitespace-nowrap
+            uppercase
+            text-white
+          "
+           href="https://twitter.com/Ratpackmafia">
+              <StyledNavLogo alt={"example"} src={"/config/images/twitter.png"}  style={{width:35, height:35}} />
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
 
     <div
       class="
