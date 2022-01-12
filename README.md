@@ -1,4 +1,6 @@
-# Welcome to HashLips 👄
+# This Code was adapted from Hashlips minting website
+
+Welcome to HashLips 👄
 
 ![](https://github.com/HashLips/hashlips_nft_minting_dapp/blob/main/logo.png)
 

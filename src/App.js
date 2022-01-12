@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { connect } from "./redux/blockchain/blockchainActions";
@@ -5,7 +6,7 @@ import { fetchData } from "./redux/data/dataActions";
 import * as s from "./style/globalStyles";
 import styled from "styled-components";
 import './fontawesome';
-
+import NavBar from "./Nav";
 import { FontAwesome, FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
@@ -355,7 +356,7 @@ function App() {
     {/* end Nav */}
     {/* start Hero image */}
 
-    <nav
+    {/* <nav
     class="
       top-0
       absolute
@@ -382,8 +383,7 @@ function App() {
           lg:w-auto lg:static lg:block lg:justify-start
         "
       >
-        <a
-          class="
+        <a class="
             text-sm
             font-bold
             leading-relaxed
@@ -393,10 +393,10 @@ function App() {
             whitespace-nowrap
             uppercase
             text-white
+            md:w-80
           "
           href="index.html"
-          ><img src="/config/images/RatPackLogo.png" class="h-10" /></a
-        >
+          ><img src="/config/images/Logo.png" class="h-5"  /></a>
       </div>
       <div
         class="
@@ -453,9 +453,9 @@ function App() {
   </nav>
 
 
+ */}
 
-
-
+<NavBar />
 
 
 
@@ -513,7 +513,7 @@ function App() {
                 "
               >
                 
-                <img src="./config/images/RatPackLogo.png" class="h-15" />
+                <img src="./config/images/Logo.png" class="h-15" />
               </h1>
               
               <p class="RPM-sub mt-4 text-gray-300" >
