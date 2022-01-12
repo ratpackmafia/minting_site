@@ -141,3 +141,70 @@ width:20px;
 .RPM-Text{
 
 }
+
+@media only screen and (max-width: 600px) {
+    #bgimage img{
+        padding:0px !important;
+        margin:0px !important;
+    
+        
+    }
+    .bgimagetop img{
+        width:300px;
+    }
+    .bgimagebot img{
+        width:300px;
+    
+        padding:0px !important;
+        margin:0px !important;
+        
+    }
+    .bgimagetop{
+        padding:0px !important;
+        margin:0px !important;
+        background-size:150px;
+        height:332px;
+        background-image: url("../images/brick.jpg");
+        /* background-repeat: repeat; */
+    }
+    .bgimagebot{
+        padding:0px !important;
+        margin:0px !important;
+        background-size:200px;
+        background-color:rgb(68, 22, 14);
+    }
+  }
+
+
+@media only screen and (max-width: 300px) {
+    #bgimage img{
+        padding:0px !important;
+        margin:0px !important;
+    
+        
+    }
+    .bgimagetop img{
+        width:200px;
+    }
+    .bgimagebot img{
+        width:200px;
+    
+        padding:0px !important;
+        margin:0px !important;
+        
+    }
+    .bgimagetop{
+        padding:0px !important;
+        margin:0px !important;
+        background-size:150px;
+        height:222px;
+        background-image: url("../images/brick.jpg");
+        /* background-repeat: repeat; */
+    }
+    .bgimagebot{
+        padding:0px !important;
+        margin:0px !important;
+        background-size:200px;
+        background-color:rgb(68, 22, 14);
+    }
+  }

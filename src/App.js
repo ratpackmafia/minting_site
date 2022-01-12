@@ -12,8 +12,7 @@ import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import { faCheese } from "@fortawesome/free-solid-svg-icons";
 import { faFingerprint } from "@fortawesome/free-solid-svg-icons";
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+
 
 
 import { faFlagCheckered } from "@fortawesome/free-solid-svg-icons";
@@ -334,7 +333,8 @@ function App() {
             uppercase
             text-white
           ">
-            <a href="https://discord.gg/5V38qceDjA" 
+            
+          <a href="https://discord.gg/5V38qceDjA" 
             class="
             text-sm
             font-bold
@@ -457,13 +457,24 @@ function App() {
 
 <NavBar />
 
+<div
+      class="
+        relative
+        pt-20
+        pb-32
+        flex
+        content-center
+        items-center
+        justify-center
+      "
+      style={{"min-height": "85vh"}}
+    >
 
 
 
 
 
-
-    <div
+    {/* <div
       class="
         relative
         pt-10
@@ -474,13 +485,13 @@ function App() {
         justify-center
       "
       
-    >
+    > */}
       <div id="bgimage" class="absolute top-0 w-full h-full bg-left bg-cover">
         <div class="bgimagetop">
-          <img src="/config/images/family_pic_top1.png" />
+          <img src="/config/images/family_pic_top1.png" class="" />
         </div>
         <div class="bgimagebot">
-          <img src="/config/images/family_pic_bottom1.png" />
+          <img src="/config/images/family_pic_bottom1.png" class=""/>
         </div>
       </div>
       
@@ -489,7 +500,7 @@ function App() {
       {/* end HERO image*/}
       {/* Start Hero Text */}
       <div class="container relative mx-auto">
-        <div class="items-center flex flex-wrap"  style={{'margin-left':'20%'}}>
+        <div class="items-center flex flex-wrap sm:ml-0 md:ml-80 "  >
           <div
             class="
               w-full
@@ -502,7 +513,7 @@ function App() {
             "
             
           >
-            <div class="bg-gray-500  rounded-md sm:bg-transparent">
+            <div class="  rounded-md sm:bg-transparent">
               <h1
                 class="
                   RPM-headline
@@ -510,32 +521,28 @@ function App() {
                   md:text-5xl
                   text-white
                   font-semibold
+                  
                 "
               >
                 
                 <img src="./config/images/Logo.png" class="h-15" />
               </h1>
               
-              <p class="RPM-sub mt-4 text-gray-300" >
+              <p class="RPM-sub mt-4 text-black" >
                 
     <div style={{
               backgroundColor: "rgba(0,0,0,0.8)",
-              padding: 24,
+              padding: 2,
               borderRadius: 24,
               border: "4px solid black",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}>
               
-            <s.TextTitle
-              style={{
-                textAlign: "center",
-                fontSize: 50,
-                fontWeight: "bold",
-                color: "var(--accent-text)",
-              }}
+            <h1
+              class='xs:text-sm lg:text-4xl'
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
-            </s.TextTitle>
+            </h1>
             <s.TextDescription
               style={{
                 textAlign: "center",

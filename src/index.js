@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import "./style/reset.css";
-import "./style/old_index.css";
+import "./style/index.css";
 import "./index.css";
 import './fontawesome';
 
