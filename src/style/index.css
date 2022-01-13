@@ -62,75 +62,22 @@ ul {
     
 
 }
-.twitter,.discord {
-padding-top:5px;
-}
-.twitter{
-padding-right:130px;
-width:20px;
-}
-.twitter img{
-    height:40px ;
-    
-    width:40px;
-}
-.discord img{
-    margin-bottom:10px;
-    height:35px ;
-    width:35px;
-}
-.discord{
-    padding-right: 50px;
-}
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/brick.jpg");
-    background-color: #cccccc;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    
-}
-.hero-text{
-    text-align: center;
-  position: absolute;
-  
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-.RPM-text{
-    width:200px;
-}
-.hero p{
-    color:white;
-}
 
-#bgimage img{
-    padding:0px !important;
-    margin:0px !important;
 
-    
-}
 .bgimagetop img{
     width:500px;
 }
 .bgimagebot img{
     width:500px;
 
-    padding:0px !important;
-    margin:0px !important;
-    
 }
 .bgimagetop{
     padding:0px !important;
     margin:0px !important;
     background-size:150px;
     height:552px;
-    background-image: url("../images/brick.jpg");
-    /* background-repeat: repeat; */
+    background-image: url("../images/bg_image.jpg");
+    
 }
 .bgimagebot{
     padding:0px !important;
@@ -164,8 +111,7 @@ width:20px;
         margin:0px !important;
         background-size:150px;
         height:332px;
-        background-image: url("../images/brick.jpg");
-        /* background-repeat: repeat; */
+        
     }
     .bgimagebot{
         padding:0px !important;
@@ -194,12 +140,9 @@ width:20px;
         
     }
     .bgimagetop{
-        padding:0px !important;
-        margin:0px !important;
         background-size:150px;
         height:222px;
-        background-image: url("../images/brick.jpg");
-        /* background-repeat: repeat; */
+        
     }
     .bgimagebot{
         padding:0px !important;

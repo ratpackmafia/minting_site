@@ -253,210 +253,14 @@ function App() {
   return (
     <s.Screen>
       
-{/* NAV  */}
-      {/* <nav
-    class="
-      top-0
-      absolute
-      z-50
-      w-full
-      flex flex-wrap
-      items-center
-      justify-between
-      bg-black
-      sticky
-    "
-  >
-    <div
-      class="container mx-auto flex flex-wrap items-center justify-between"
-    >
-      <div
-        class="
-          w-full
-          relative
-          flex
-          justify-between
-          lg:w-auto lg:static lg:block lg:justify-start
-        "
-      ></div>
-</div>
 
-<a
-          class="
-            text-sm
-            font-bold
-            leading-relaxed
-            inline-block
-            
-            ml-20
-            whitespace-nowrap
-            uppercase
-            text-white
-          "
-          href="index.html"
-          >
-            <img src="/config/images/RatPackLogo.png" class="h-10" />
-            </a>
-          <ul class="bg-black">
-            <li class="
-            
-            text-sm
-            font-bold
-            leading-relaxed
-            inline-block
-            
-            whitespace-nowrap
-            uppercase
-            text-white
-          ">
-            <a class="
-            text-sm
-            font-bold
-            leading-relaxed
-            inline-block
-            
-            whitespace-nowrap
-            uppercase
-            text-white
-          "
-           href="https://twitter.com/Ratpackmafia">
-              <StyledNavLogo alt={"example"} src={"/config/images/twitter.png"}  style={{width:40, height:40}} />
-              </a>
-            </li>
-            <li class="
-            text-sm
-            font-bold
-            leading-relaxed
-            inline-block
-            mr-20
-            whitespace-nowrap
-            uppercase
-            text-white
-          ">
-            
-          <a href="https://discord.gg/5V38qceDjA" 
-            class="
-            text-sm
-            font-bold
-            leading-relaxed
-            inline-block
-            
-            whitespace-nowrap
-            uppercase
-            text-white
-          "
->
-              <StyledNavLogo alt={"example"} src={"/config/images/discord.png"}  style={{width:35, height:35}}/>
-              </a>
-            </li>
-          </ul>
+    
+   
 
-    </nav> */}
-
-    {/* end Nav */}
-    {/* start Hero image */}
-
-    {/* <nav
-    class="
-      top-0
-      absolute
-      z-50
-      w-full
-      flex flex-wrap
-      items-center
-      justify-between
-      px-2
-      py-3
-      bg-black
-      sticky
-    "
-  >
-    <div
-      class="container px-4 mx-auto flex flex-wrap items-center justify-between"
-    >
-      <div
-        class="
-          w-full
-          relative
-          flex
-          justify-between
-          lg:w-auto lg:static lg:block lg:justify-start
-        "
-      >
-        <a class="
-            text-sm
-            font-bold
-            leading-relaxed
-            inline-block
-            mr-4
-            py-2
-            whitespace-nowrap
-            uppercase
-            text-white
-            md:w-80
-          "
-          href="index.html"
-          ><img src="/config/images/Logo.png" class="h-5"  /></a>
-      </div>
-      <div
-        class="
-          lg:flex
-          flex-grow
-          items-center
-          bg-black          
-        "
-        
-      >
-        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto bg-black
-">
-          <li class="flex items-center">
-          <a href="https://discord.gg/5V38qceDjA" 
-            class="
-            text-sm
-            font-bold
-            leading-relaxed
-            inline-block
-            pb-5
-            
-            whitespace-nowrap
-            uppercase
-            text-white
-          "
->
-              <StyledNavLogo alt={"example"} src={"/config/images/discord.png"}  style={{width:30, height:30,}}/>
-              </a>
-
-
-
-
-          </li>
-
-          <li class="flex items-center">
-          <a class="
-            text-sm
-            font-bold
-            leading-relaxed
-            inline-block
-            pb-5
-
-            whitespace-nowrap
-            uppercase
-            text-white
-          "
-           href="https://twitter.com/Ratpackmafia">
-              <StyledNavLogo alt={"example"} src={"/config/images/twitter.png"}  style={{width:35, height:35}} />
-              </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
- */}
-
+    
 <NavBar />
 
+ {/* start Hero image section */}
 <div
       class="
         relative
@@ -474,30 +278,20 @@ function App() {
 
 
 
-    {/* <div
-      class="
-        relative
-        pt-10
-        pb-40
-        flex
-        content-center
-        items-center
-        justify-center
-      "
-      
-    > */}
-      <div id="bgimage" class="absolute top-0 w-full h-full bg-left bg-cover">
+      <div id="bgimage" class="absolute top-0 w-full h-full bg-left bg-cover" >
         <div class="bgimagetop">
-          <img src="/config/images/family_pic_top1.png" class="" />
+          <img src="/config/images/family_pic_top.png" class="" />
         </div>
         <div class="bgimagebot">
-          <img src="/config/images/family_pic_bottom1.png" class=""/>
+          <img src="/config/images/family_pic_bottom.png" class=""/>
         </div>
       </div>
       
       
 
       {/* end HERO image*/}
+
+
 
       {/* Start Hero Text */}
 
@@ -517,7 +311,8 @@ function App() {
             
           >
             <div class="  rounded-md sm:bg-transparent">
-              <h1
+              {/*  decided to put logo in the minting box instead of above it.
+               <h1
                 class="
                   RPM-headline
                   text-4xl
@@ -529,11 +324,14 @@ function App() {
               >
                 
                 <img src="./config/images/Logo.png" class="h-15" />
-              </h1>
+              </h1> 
+              */}
               
               <p class="RPM-sub mt-4 text-black" >
 
               <div>
+
+
             {/* optional coming soon section where the mint section would be */}
               
               {/* 
@@ -552,8 +350,11 @@ function App() {
               </h1>
                 */}
                
-              {/* end coming soon section  */}
-                {/*  uncomment this section to add mint   */}
+              {/* end coming soon section 
+              
+              */}
+
+                {/* HashLips Minting box */}
                 
     <div style={{
               backgroundColor: "rgba(0,0,0,0.8)",
@@ -562,7 +363,23 @@ function App() {
               border: "4px solid black",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}>
-              
+
+             <h1
+                class="
+                  RPM-headline
+                  text-4xl
+                  p-5
+                  md:text-5xl
+                  text-white
+                  font-semibold
+                  
+                "
+              >
+                
+                <img src="./config/images/Logo.png" class="h-15" />
+              </h1>
+
+
             <h1
               class='xs:text-sm lg:text-4xl text-white'
             >
@@ -715,9 +532,11 @@ function App() {
             )}
             </div>
           
-{/* end commented mint section */}
-</div>
+{/* end mint section */}
 
+
+
+</div>
 
 
 
@@ -727,7 +546,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div> 
 
       {/* end Hero Text section */}
      
@@ -738,609 +557,6 @@ function App() {
 
 
 
-
-
-{/*  
-
-    <s.Container
-        flex={1}
-        ai={"center"}
-        style={{ padding: 2, backgroundColor: "rgb(178 209 255 / 40%)"}}
-        
-      >
-      
-
-
-
-        <ResponsiveWrapper flex={1} style={{ padding: 2 }} >
-          <s.Container flex={1} jc={"center"} ai={"center"} style={{'margin-bottom':20}}>
-          
-          <img class="example-pic" 
-            alt={"example"} 
-            src={"/config/images/1.jpg"}
-            />
-          </s.Container>
-          
-          <s.Container flex={1} jc={"center"} ai={"center"} style={{'margin-bottom':20}} >
-          <img class="example-pic" 
-              alt={"example"}
-              src={"/config/images/2.jpg"}
-            />
-          </s.Container>
-          
-          <s.Container flex={1} jc={"center"} ai={"center"} style={{'margin-bottom':20}}>
-          
-          <img class="example-pic" 
-              alt={"example"}
-              src={"/config/images/3.jpg"}
-            />
-          </s.Container>
-        </ResponsiveWrapper>
-
-            <ResponsiveWrapper>
-              <s.Container flex={1} jc={"center"} ai={"center"} style={{'margin-bottom':20}}></s.Container>
-
-
-            </ResponsiveWrapper>
-
-
-            <section class="relative py-20 w-full">
-
-
-      <div
-        class="
-          bottom-auto
-          
-          top-0
-          left-0
-          right-0
-          w-full
-          absolute
-          pointer-events-none
-          overflow-hidden
-          bg-gray-700
-          -mt-20
-        "
-        style={{height: 80}}
-              >
-        <svg
-          class="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
-        >
-          <polygon
-            class="text-black fill-current"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg>
-      </div>
-      <div class="container mx-auto px-4">
-        <div class="items-center flex flex-wrap">
-          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-            <img
-              alt="..."
-              class="max-w-full rounded-lg shadow-lg"
-              src="/config/images/4.jpg"
-            />
-          </div>
-          <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-            <div class="md:pr-12">
-              <div
-                class="
-                  mt-6
-                  md:mt-0
-                  text-pink-600
-                  p-3
-                  text-center
-                  inline-flex
-                  items-center
-                  justify-center
-                  w-16
-                  h-16
-                  mb-6
-                  shadow-lg
-                  rounded-full
-                  bg-pink-300
-                "
-              >
-                <i class="fas fa-rocket text-xl"></i>
-              </div>
-              <h3 class="text-gray-400 text-3xl font-semibold">Minting Soon</h3>
-              <p class="mt-4 text-lg leading-relaxed text-gray-200">
-                Every Rat in the Pack Mafia is hand crafted with in blender3D to have different levels of rarity and
-                features. There are only 3000 available so get them before they
-                are gone! And at 20 FTM each it's surely an offer you cannot
-                refuse! Rat Pack mafia, when youre here, you're Family!
-              </p>
-
-              <ul class="list-none mt-6">
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span
-                        class="
-                          text-xs
-                          font-semibold
-                          inline-block
-                          py-1
-                          px-2
-                          uppercase
-                          rounded-full
-                          text-pink-600
-                          bg-pink-200
-                          mr-3
-                        "
-                        ><i class="fas fa-flag-checkered"></i
-                      ></span>
-                    </div>
-                    <div>
-                      <h4 class="text-gray-200">
-                        Meticulously crafted attributes
-                      </h4>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span
-                        class="
-                          text-xs
-                          font-semibold
-                          inline-block
-                          py-1
-                          px-2
-                          uppercase
-                          rounded-full
-                          text-pink-600
-                          bg-pink-200
-                          mr-3
-                        "
-                        ><i class="fas fa-cheese"></i
-                      ></span>
-                    </div>
-                    <div>
-                      <h4 class="text-gray-200">Stupendously cheesy Rats</h4>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span
-                        class="
-                          text-xs
-                          font-semibold
-                          inline-block
-                          py-1
-                          px-2
-                          uppercase
-                          rounded-full
-                          text-pink-600
-                          bg-pink-200
-                          mr-3
-                        "
-                        ><i class="fas fa-fingerprint"></i
-                      ></span>
-                    </div>
-                    <div>
-                      <h4 class="text-gray-200">
-                        Dynamicaly generated with no duplicates
-                      </h4>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <p class="mt-12 text-lg leading-relaxed text-gray-200">
-              These rats won't steal your cheese... or will they???
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-{/* minting soon */}
-{/* 
-
-
-
-            <section class="pt-20 pb-48 ">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap justify-center text-center mb-24">
-          <div class="w-full lg:w-6/12 px-4">
-            <h2 class="text-gray-400 text-4xl font-semibold">
-            Testimonials...  
-            </h2>
-          </div>
-        </div>
-        <div class="flex flex-wrap">
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-            <div class="px-6">
-              <img
-                alt="..."
-                src="/config/images/5.jpg"
-                class="shadow-lg rounded-full max-w-full mx-auto"
-                style={{"max-width": 120}}
-              />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold text-gray-400">Michael Ratleon</h5>
-                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
-                  KEEP YOUR FRIENDS CLOSE, BUT YOUR CHEESE CLOSER.
-                </p>
-                <div class="mt-6"></div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-            <div class="px-6">
-              <img
-                alt="..."
-                src="/config/images/6.jpg"
-                class="shadow-lg rounded-full max-w-full mx-auto"
-                style={{"max-width": 120}}
-              />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold text-gray-400">Peter Ratenza</h5>
-                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
-                  LEAVE THE GUN, TAKE THE CHEESE
-                </p>
-                <div class="mt-6"></div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-            <div class="px-6">
-              <img
-                alt="..."
-                src="/config/images/7.jpg"
-                class="shadow-lg rounded-full max-w-full mx-auto"
-                style={{"max-width": 120}}
-              />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold text-gray-400">Michael Ratleon</h5>
-                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
-                  JUST WHEN I THOUGHT I WAS OUT, THE CHEESE PULLs ME BACK IN
-                </p>
-                <div class="mt-6"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-            <div class="px-6">
-              <img
-                alt="..."
-                src="/config/images/8.jpg"
-                class="shadow-lg rounded-full max-w-full mx-auto"
-                style={{"max-width": 120}}
-              />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold text-gray-400">Rattie Brasco</h5>
-                <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
-                  Forget About it!
-                </p>
-                <div class="mt-6"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="w-full relative bg-gray-700 pt-8 pb-6">
-    <div
-      class="
-        bottom-auto
-        top-0
-        left-0
-        right-0
-        w-full
-        absolute
-        pointer-events-none
-        overflow-hidden
-        -mt-20
-      "
-      style={{height: 80}}
-    >
-      <svg
-        class="absolute bottom-0 overflow-hidden"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none"
-        version="1.1"
-        viewBox="0 0 2560 100"
-        x="0"
-        y="0"
-      >
-        <polygon
-          class="text-gray-700 fill-current"
-          points="2560 0 2560 100 0 100"
-        ></polygon>
-      </svg>
-    </div>
-
-    <div class="container mx-auto px-4">
-      <div
-        class="flex flex-wrap items-center md:justify-between justify-center"
-      >
-        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-          <div class="text-sm text-gray-200 font-semibold py-1">
-            Copyright © 2021 
-            <a
-              href="https://twitter.com/Ratpackmafia"
-              class="text-gray-200 hover:text-gray-900"
-              >Rat Pack Mafia</a
-            >.
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-
-
-
-
-{
-
-        <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
-          </s.TextDescription>
-          <s.SpacerSmall />
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
-          </s.TextDescription>
-        </s.Container>
-      </s.Container> 
-
-
-
-
-
-
-
-
-
-
-
-        <s.Container
-        flex={1}
-        ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        
-      >
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
-          </s.Container>
-          <s.SpacerLarge />
-          <s.Container
-            flex={2}
-            jc={"center"}
-            ai={"center"}
-            style={{
-              backgroundColor: "var(--accent)",
-              padding: 24,
-              borderRadius: 24,
-              border: "4px dashed var(--secondary)",
-              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
-            }}
-          >
-            <s.TextTitle
-              style={{
-                textAlign: "center",
-                fontSize: 50,
-                fontWeight: "bold",
-                color: "var(--accent-text)",
-              }}
-            >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
-            </s.TextTitle>
-            <s.TextDescription
-              style={{
-                textAlign: "center",
-                color: "var(--primary-text)",
-              }}
-            >
-              <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
-              </StyledLink>
-            </s.TextDescription>
-            <s.SpacerSmall />
-            {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
-              <>
-                <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  The sale has ended.
-                </s.TextTitle>
-                <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  You can still find {CONFIG.NFT_NAME} on
-                </s.TextDescription>
-                <s.SpacerSmall />
-                <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
-                  {CONFIG.MARKETPLACE}
-                </StyledLink>
-              </>
-            ) : (
-              <>
-                <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  
-                  1 Rat will cost {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
-                </s.TextTitle>
-                <s.SpacerXSmall />
-                <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  Excluding gas fees.
-                </s.TextDescription>
-                <s.SpacerSmall />
-                {blockchain.account === "" ||
-                blockchain.smartContract === null ? (
-                  <s.Container ai={"center"} jc={"center"}>
-                    <s.TextDescription
-                      style={{
-                        textAlign: "center",
-                        color: "var(--accent-text)",
-                      }}
-                    >
-                      Comming soon to the {CONFIG.NETWORK.NAME} network
-                      
-                    </s.TextDescription>
-                    <s.SpacerSmall />
-                    <StyledButton
-                      onClick={(e) => {
-                        e.preventDefault();
-                        dispatch(connect());
-                        getData();
-                      }}
-                      
-                    >
-                     
-                      
-                      CONNECT 
-                    </StyledButton>
-                    
-                    {blockchain.errorMsg !== "" ? (
-                      <>
-                        <s.SpacerSmall />
-                        <s.TextDescription
-                          style={{
-                            textAlign: "center",
-                            color: "var(--accent-text)",
-                          }}
-                        >
-                          {blockchain.errorMsg}
-                        </s.TextDescription>
-                      </>
-                    ) : null}
-                  </s.Container>
-                ) : (
-                  <>
-                    <s.TextDescription
-                      style={{
-                        textAlign: "center",
-                        color: "var(--accent-text)",
-                      }}
-                    >
-                      {feedback}
-                    </s.TextDescription>
-                    <s.SpacerMedium />
-                    <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledRoundButton
-                        style={{ lineHeight: 0.4 }}
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          decrementMintAmount();
-                        }}
-                      >
-                        -
-                      </StyledRoundButton>
-                      <s.SpacerMedium />
-                      <s.TextDescription
-                        style={{
-                          textAlign: "center",
-                          color: "var(--accent-text)",
-                        }}
-                      >
-                        {mintAmount}
-                      </s.TextDescription>
-                      <s.SpacerMedium />
-                      <StyledRoundButton
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          incrementMintAmount();
-                        }}
-                      >
-                        +
-                      </StyledRoundButton>
-                    </s.Container>
-                    <s.SpacerSmall />
-                    <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledButton
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          claimNFTs();
-                          getData();
-                        }}
-                      >
-                        {claimingNft ? "BUSY" : "BUY"}
-                      </StyledButton>
-                    </s.Container>
-                  </>
-                )}
-              </>
-              
-            )}
-            <s.SpacerMedium />
-          </s.Container>
-          <s.SpacerLarge />
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-              alt={"example"}
-              src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
-            />
-          </s.Container>
-        </ResponsiveWrapper> 
-        <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
-          </s.TextDescription>
-          <s.SpacerSmall />
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
-          </s.TextDescription>
-        </s.Container>*/}
-      {/* </s.Container> */}
 
 
 

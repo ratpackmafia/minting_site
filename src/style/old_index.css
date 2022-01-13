@@ -78,7 +78,7 @@ width:20px;
     padding-right: 50px;
 }
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/brick.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/config/images/bg_image.jpg");
     background-color: #cccccc;
     height: 500px;
     background-position: center;
