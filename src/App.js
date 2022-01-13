@@ -498,9 +498,12 @@ function App() {
       
 
       {/* end HERO image*/}
+
       {/* Start Hero Text */}
+
+
       <div class="container relative mx-auto">
-        <div class="items-center flex flex-wrap sm:ml-0 md:ml-80 "  >
+        <div class="items-center flex flex-wrap sm:ml-0 md:ml-80"  >
           <div
             class="
               w-full
@@ -529,6 +532,27 @@ function App() {
               </h1>
               
               <p class="RPM-sub mt-4 text-black" >
+
+              <div>
+ {/* optional coming soon section where the mint section would be */}
+ {/* 
+              <h1
+                class="
+                  RPM-headline
+                  text-4xl
+                  md:text-5xl
+                  text-white
+                  font-semibold
+                  
+                "
+              >
+                
+                Coming Soon to Fantom!
+              </h1>
+                */}
+               
+              {/* end coming soon section  */}
+                {/*  uncomment this section to add mint   */}
                 
     <div style={{
               backgroundColor: "rgba(0,0,0,0.8)",
@@ -689,8 +713,9 @@ function App() {
               
             )}
             </div>
-
-
+          
+{/* end commented mint section */}
+</div>
 
 
 
@@ -701,7 +726,9 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      {/* end Hero Text section */}
      
     </div>
     
