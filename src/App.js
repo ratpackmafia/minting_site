@@ -534,8 +534,9 @@ function App() {
               <p class="RPM-sub mt-4 text-black" >
 
               <div>
- {/* optional coming soon section where the mint section would be */}
- {/* 
+            {/* optional coming soon section where the mint section would be */}
+              
+              {/* 
               <h1
                 class="
                   RPM-headline
@@ -563,7 +564,7 @@ function App() {
             }}>
               
             <h1
-              class='xs:text-sm lg:text-4xl'
+              class='xs:text-sm lg:text-4xl text-white'
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
             </h1>
