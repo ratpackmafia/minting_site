@@ -71,12 +71,13 @@ ul {
     width:500px;
 
 }
-.bgimagetop{
+#bgimage{
     padding:0px !important;
     margin:0px !important;
-    background-size:150px;
-    height:552px;
-    background-image: url("../images/bg_image.png");
+    opacity: .75;
+    background-size:350px;
+    height:690px;
+    background-image: url("../images/bg_image.jpg");
     
 }
 .bgimagebot{

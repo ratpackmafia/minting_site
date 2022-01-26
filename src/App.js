@@ -271,21 +271,23 @@ function App() {
         items-center
         justify-center
       "
-      style={{"min-height": "85vh"}}
+      style={{"min-height": "690px"}}
     >
 
 
 
 
-
-      <div id="bgimage" class="absolute top-0 w-full h-full bg-left bg-cover" >
-        <div class="bgimagetop">
-          <img src="/config/images/family_pic_top.png" class="" />
+      <div id="bgimage" class="absolute top-0 w-full h-full bg-left bg-cover bg-gray" >
+        {/* <div class="bgimagetop">  */}
+         {/* <img src="/config/images/family_pic_top.png" class="" /> 
         </div>
         <div class="bgimagebot">
-          <img src="/config/images/family_pic_bottom.png" class=""/>
-        </div>
+         <img src="/config/images/family_pic_bottom.png" class=""/> 
+        </div> */}
       </div>
+     
+     
+     
       
       
 
@@ -296,13 +298,15 @@ function App() {
       {/* Start Hero Text */}
 
 
-      <div class="container relative mx-auto">
-        <div class="items-center flex flex-wrap sm:ml-0 md:ml-80"  >
+      <div class="container relative mx-auto " >
+
+        
+        <div class="items-center flex flex-wrap "  >
           <div
             class="
-              w-full
-              lg:w-4/5
-              px-4
+              w-2/3
+              
+              px-12
               ml-auto
               mr-auto
               justify-center
@@ -311,6 +315,9 @@ function App() {
             
           >
             <div class="  rounded-md sm:bg-transparent">
+
+
+              
               {/*  decided to put logo in the minting box instead of above it.
                <h1
                 class="
@@ -327,14 +334,14 @@ function App() {
               </h1> 
               */}
               
-              <p class="RPM-sub mt-4 text-black" >
+              <p class="RPM-sub mt-4 text-black " >
 
               <div>
 
 
             {/* optional coming soon section where the mint section would be */}
               
-              {/* 
+              
               <h1
                 class="
                   RPM-headline
@@ -346,17 +353,26 @@ function App() {
                 "
               >
                 
-                Coming Soon to Fantom!
+                Invading the barn Soon on 
+                <s.SpacerMedium />
+                
+                The Avalanche Network!
+                
               </h1>
-                */}
+               
                
               {/* end coming soon section 
               
               */}
 
+
+
+
+
+
                 {/* HashLips Minting box */}
-                
-    <div style={{
+{/*                 
+    <div class="" style={{
               backgroundColor: "rgba(0,0,0,0.8)",
               padding: 2,
               borderRadius: 24,
@@ -366,17 +382,18 @@ function App() {
 
              <h1
                 class="
-                  RPM-headline
+                flex
                   text-4xl
-                  p-5
+                  justify-center 
                   md:text-5xl
                   text-white
                   font-semibold
+                  p-5
                   
                 "
               >
                 
-                <img src="./config/images/Logo.png" class="h-15" />
+                <img src="./config/images/Ratpack.png" class="h-15 " />
               </h1>
 
 
@@ -531,7 +548,7 @@ function App() {
               
             )}
             </div>
-          
+           */}
 {/* end mint section */}
 
 
@@ -660,7 +677,7 @@ function App() {
             <p
               class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-200"
             >
-              Rat Pack Mafia is a Family of Rats carving out a place in the
+              Rat Pack is a Family of Rats carving out a place in the
               world, fighting their way to the top.  
             </p>
           </div>
@@ -681,7 +698,7 @@ function App() {
             >
               <img
                 alt="..."
-                src="/config/images/rats.gif"
+                src="/config/images/Ratpack.gif"
                 class="w-full align-middle rounded-t-lg"
               />
               <blockquote class="relative p-8 mb-4">
@@ -772,10 +789,10 @@ function App() {
               </div>
               <h3 class="text-gray-400 text-3xl font-semibold">Minting Soon</h3>
               <p class="mt-4 text-lg leading-relaxed text-gray-200">
-                Every Rat in the Pack Mafia is hand crafted with in blender3D to have different levels of rarity and
-                features. There are only 3000 available so get them before they
-                are gone! And at 20 FTM each it's surely an offer you cannot
-                refuse! Rat Pack mafia, when youre here, you're Family!
+                Every Rat in the Pack is hand crafted in blender3D to have different levels of rarity and
+                features. There are only 1000 available so get them before they
+                are gone! And at 1 Avax each it's surely an offer you cannot
+                refuse! 
               </p>
 
               <ul class="list-none mt-6">
@@ -875,7 +892,7 @@ function App() {
         <div class="flex flex-wrap justify-center text-center mb-24">
           <div class="w-full lg:w-6/12 px-4">
             <h2 class="text-gray-400 text-4xl font-semibold">
-            Testimonials...  
+            Meet the Potluck Labs Team...  
             </h2>
           </div>
         </div>
@@ -889,9 +906,13 @@ function App() {
                 style={{"max-width": 120}}
               />
               <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold text-gray-400">Michael Ratleon</h5>
+                <h5 class="text-xl font-bold text-gray-400">
+                  <a href="https://twitter.com/DraculaPresley">
+                  Dracula Pressley
+                  </a>
+                  </h5>
                 <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
-                  KEEP YOUR FRIENDS CLOSE, BUT YOUR CHEESE CLOSER.
+                  Leader of the Darkness
                 </p>
                 <div class="mt-6"></div>
               </div>
@@ -905,10 +926,15 @@ function App() {
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style={{"max-width": 120}}
               />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold text-gray-400">Peter Ratenza</h5>
+               <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-gray-400">
+                <a href="https://twitter.com/_truevoodoo/">
+                TrueVoodoo
+                                </a>
+                
+                  </h5>
                 <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
-                  LEAVE THE GUN, TAKE THE CHEESE
+                 Chief Vision Architect
                 </p>
                 <div class="mt-6"></div>
               </div>
@@ -922,10 +948,14 @@ function App() {
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style={{"max-width": 120}}
               />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold text-gray-400">Michael Ratleon</h5>
+               <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-gray-400">
+               <a href="https://twitter.com/tinfoilrealist/">
+                Tinfoil Realist
+                </a>
+                    </h5>
                 <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
-                  JUST WHEN I THOUGHT I WAS OUT, THE CHEESE PULLs ME BACK IN
+                  Ambassador of Alpha
                 </p>
                 <div class="mt-6"></div>
               </div>
@@ -940,10 +970,12 @@ function App() {
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style={{"max-width": 120}}
               />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold text-gray-400">Rattie Brasco</h5>
+               <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-gray-400">
+                  <a href="https://twitter.com/PlotTwistFTM">Plot Twist</a>
+                  </h5>
                 <p class="mt-1 text-sm text-gray-200 uppercase font-semibold">
-                  Forget About it!
+                  The Go To Guy
                 </p>
                 <div class="mt-6"></div>
               </div>
@@ -993,11 +1025,11 @@ function App() {
       >
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-200 font-semibold py-1">
-            Copyright © 2021 
+            Created by 
             <a
-              href="https://twitter.com/zombiestiltskin"
+              href="https://twitter.com/Zombiestiltskin"
               class="text-gray-200 hover:text-gray-900"
-              >Rat Pack Mafia</a
+              > ZombieStiltskin</a
             >.
           </div>
         </div>

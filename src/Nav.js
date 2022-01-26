@@ -12,7 +12,7 @@ function NavBar() {
               <div className="flex-shrink-0">
                 <img
                   className="h-8 w-18"
-                  src="./config/images/Logo.png"
+                  src="./config/images/Ratpack.png"
                   alt="Workflow"
                 />
               </div>
@@ -29,11 +29,11 @@ function NavBar() {
             uppercase
             text-white
           "
-           href="https://twitter.com/Ratpackmafia">
+           href="https://twitter.com/Potlucklabs">
               <img alt={"Twitter"} src={"/config/images/twitter.png"} class={"mt-4"}  style={{width:50, height:50}} />
               </a>
 
-              <a href="https://discord.gg/5V38qceDjA" 
+              <a href="https://discord.gg/potluckprotocol" 
             class="
             text-sm
             font-bold
