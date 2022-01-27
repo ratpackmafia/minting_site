@@ -77,7 +77,8 @@ ul {
     opacity: .75;
     background-size:350px;
     height:690px;
-    background-image: url("../images/bg_image.jpg");
+    background-color:black;
+    /* background-image: url("../images/bg_image.jpg"); */
     
 }
 .bgimagebot{
