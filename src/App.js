@@ -277,17 +277,17 @@ function App() {
         items-center
         justify-center
       "
-      style={{"min-height": "700px"}}
+      style={{"height": "600px"}}
     >
       <div id="bgimage" class="absolute top-0 w-full h-full bg-left bg-cover bg-gray " >
        
        
        {/* Minting SOON  comment this section when contract is live - the background image doesnt work very well... */}
-        <MintingSoon />
+        {/* <MintingSoon />
         
         <div class="bgimagetop" > 
          <img src="/config/images/RP_bg6.png" class=""  /> 
-        </div>
+        </div> */}
         {/* END MINTING SOON  */}
       </div>
      
@@ -300,8 +300,7 @@ function App() {
 
 {/* Start mint section */}
 
-      
-{/* 
+
        <div class="container relative mx-auto">
         <div class="items-center flex flex-wrap sm:ml-0"  >
           <div
@@ -513,8 +512,7 @@ function App() {
 </div>
 </div> 
  
-  */}
-
+  
  {/* Remove this line to turn on minting box* */}
 
 
@@ -646,7 +644,7 @@ function App() {
             <p
               class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-200"
             >
-              Rat Pack is a Family of Rats carving out a place in the
+              Rat Pack is a Family of Rats created by <a href ="https://twitter.com/Zombiestiltskin"> ZombieStiltskin </a> who are carving out a place in the
               world, fighting their way to the top.  
             </p>
           </div>
@@ -758,7 +756,7 @@ function App() {
               </div>
               <h3 class="text-gray-400 text-3xl font-semibold">Minting Soon</h3>
               <p class="mt-4 text-lg leading-relaxed text-gray-200">
-                Every Rat in the Pack is hand crafted in blender3D to have different levels of rarity and
+                Every Rat in the Pack is hand crafted in blender3D by to have different levels of rarity and
                 features. There are only 1000 available so get them before they
                 are gone! And at 1 Avax each it's surely an offer you cannot
                 refuse! 
@@ -994,11 +992,11 @@ function App() {
       >
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-200 font-semibold py-1">
-            Created by 
+            Copyright @ 2022 by 
             <a
-              href="https://twitter.com/Zombiestiltskin"
+              href="https://twitter.com/Potlucklabs"
               class="text-gray-200 hover:text-gray-900"
-              > ZombieStiltskin</a
+              > Potluck Labs</a
             >.
           </div>
         </div>
