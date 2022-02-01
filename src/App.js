@@ -7,6 +7,7 @@ import * as s from "./style/globalStyles";
 import styled from "styled-components";
 import './fontawesome';
 import NavBar from "./Nav";
+import MintingSoon from "./mintingsoon"
 import { FontAwesome, FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
@@ -263,6 +264,7 @@ function App() {
  {/* start Hero image section */}
 <div
       class="
+      
         relative
         pt-20
         pb-32
@@ -271,15 +273,19 @@ function App() {
         items-center
         justify-center
       "
-      style={{"min-height": "800px"}}
+      style={{"min-height": "700px"}}
     >
 
 
 
 
-      <div id="bgimage" class="absolute top-0 w-full h-full bg-left bg-cover bg-gray" >
-        <div class="bgimagetop"> 
-         <img src="/config/images/RP_bg6.png" class="" /> 
+      <div id="bgimage" class="absolute top-0 w-full h-full bg-left bg-cover bg-gray " >
+       
+        <MintingSoon />
+
+        
+        <div class="bgimagetop" > 
+         <img src="/config/images/RP_bg6.png" class=""  /> 
         </div>
         {/* <div class="bgimagebot"> */}
          {/* <img src="/config/images/family_pic_bottom.png" class=""/>  */}
@@ -295,76 +301,7 @@ function App() {
 
 
 
-      {/* Start Hero Text */}
-
-
-      <div class="container relative mx-auto " >
-
-        
-        <div class="items-center flex flex-wrap "  >
-          <div
-            class="
-              w-2/3
-              
-              px-12
-              ml-auto
-              mr-auto
-              justify-center
-              text-center
-            "
-            
-          >
-            <div class="  rounded-md sm:bg-transparent">
-
-
-              
-              {/*  decided to put logo in the minting box instead of above it.
-               <h1
-                class="
-                  RPM-headline
-                  text-4xl
-                  md:text-5xl
-                  text-white
-                  font-semibold
-                  
-                "
-              >
-                
-                <img src="./config/images/Logo.png" class="h-15" />
-              </h1> 
-              */}
-              
-              <p class="RPM-sub mt-4 text-black " >
-
-              <div>
-
-
-            {/* optional coming soon section where the mint section would be */}
-              
-              
-              <h1
-                class="
-                  RPM-headline
-                  text-4xl
-                  md:text-5xl
-                  text-white
-                  font-semibold
-                  
-                "
-              >
-                
-                Invading the barn Soon  
-                <s.SpacerMedium />
-                
-                on The Avalanche Network!
-                
-              </h1>
-               
-               
-              {/* end coming soon section 
-              
-              */}
-
+      
 
 
 
@@ -557,17 +494,17 @@ function App() {
 
 
 
-              </p>
+              
               
 
-            </div>
-          </div>
-        </div>
-      </div> 
+            
+          
+        
+      
 
       {/* end Hero Text section */}
      
-    </div>
+    
     
 
 

@@ -62,24 +62,52 @@ ul {
     
 
 }
-
+.bgimagetop {
+    
+    
+    
+}
+.bgimagetop{
+    display:flex;
+    justify-content: center;
+}
 
 .bgimagetop img{
-    position: absolute;
-    bottom: 0;
-    left: 60px;
-    width:400px;
+/* width:30%; */
+height:500px;
+position: absolute;
+bottom:0;
 }
+
+
+/* 
+.bgimagetop img{
+    margin-left:35%;
+    
+    min-width: 400px;
+    bottom: 0;
+    /* margin-left:35%; */
+    /* width:30%; */
+    /* height: 500px; */
+/* }  */
+
 .bgimagebot img{
     width:400px;
+
+}
+.RPM-headline{
+
+    background:red;
+    position:absolute;
+    
 
 }
 #bgimage{
     padding:0px !important;
     margin:0px !important;
-    opacity: .75;
+    
     background-size:350px;
-    height:800px;
+    height:700;
     background-color:black;
     background-image: url("../images/bg_image.jpg");
     
@@ -90,10 +118,18 @@ ul {
     background-size:200px;
     background-color:rgb(68, 22, 14);
 }
-.RPM-Text{
 
-}
+/* 
+@media only screen and (max-width: 800px) {
 
+
+    .bgimagetop img{
+       
+        margin-left:30%;
+        width:30%;
+    }
+} */
+/* 
 @media only screen and (max-width: 600px) {
     #bgimage img{
         padding:0px !important;
@@ -101,32 +137,35 @@ ul {
     
         
     }
-    .bgimagetop img{
-        width:300px;
-    }
-    .bgimagebot img{
+    /* .bgimagetop img{
+        position: absolute;
+        bottom: 0;
+        margin-left:30%;
+        width:40%;
+    } */
+    /* .bgimagebot img{
         width:300px;
     
         padding:0px !important;
         margin:0px !important;
         
-    }
-    .bgimagetop{
+    } */
+    /* .bgimagetop{
         padding:0px !important;
         margin:0px !important;
         background-size:150px;
         height:332px;
         
-    }
-    .bgimagebot{
+    } */
+    /* .bgimagebot{
         padding:0px !important;
         margin:0px !important;
         background-size:200px;
         background-color:rgb(68, 22, 14);
     }
-  }
+  } */
 
-
+/* 
 @media only screen and (max-width: 300px) {
     #bgimage img{
         padding:0px !important;
@@ -134,9 +173,12 @@ ul {
     
         
     }
-    .bgimagetop img{
-        width:200px;
-    }
+    /* .bgimagetop img{
+        position: absolute;
+        bottom: 0;
+        margin-left:30%;
+        width:40%;
+    } 
     .bgimagebot img{
         width:200px;
     
@@ -144,11 +186,11 @@ ul {
         margin:0px !important;
         
     }
-    .bgimagetop{
+    /* .bgimagetop{
         background-size:150px;
         height:222px;
         
-    }
+    } 
     .bgimagebot{
         padding:0px !important;
         margin:0px !important;
@@ -156,3 +198,4 @@ ul {
         background-color:rgb(68, 22, 14);
     }
   }
+   */
