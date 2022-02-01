@@ -7,6 +7,11 @@ function MintingSoon() {
   
   return (
 
+
+
+
+    
+
 <div> 
         <div class="container relative mx-auto mt-10
 " >

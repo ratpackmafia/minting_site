@@ -7,6 +7,7 @@ import * as s from "./style/globalStyles";
 import styled from "styled-components";
 import './fontawesome';
 import NavBar from "./Nav";
+import Minting from "./minting"
 import MintingSoon from "./mintingsoon"
 import { FontAwesome, FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
@@ -262,6 +263,9 @@ function App() {
 <NavBar />
 
  {/* start Hero image section */}
+
+
+
 <div
       class="
       
@@ -275,21 +279,16 @@ function App() {
       "
       style={{"min-height": "700px"}}
     >
-
-
-
-
       <div id="bgimage" class="absolute top-0 w-full h-full bg-left bg-cover bg-gray " >
        
+       
+       {/* Minting SOON  comment this section when contract is live - the background image doesnt work very well... */}
         <MintingSoon />
-
         
         <div class="bgimagetop" > 
          <img src="/config/images/RP_bg6.png" class=""  /> 
         </div>
-        {/* <div class="bgimagebot"> */}
-         {/* <img src="/config/images/family_pic_bottom.png" class=""/>  */}
-        {/* </div>  */}
+        {/* END MINTING SOON  */}
       </div>
      
      
@@ -299,16 +298,31 @@ function App() {
 
       {/* end HERO image*/}
 
-
+{/* Start mint section */}
 
       
+{/* 
+       <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap sm:ml-0"  >
+          <div
+            class="
+              w-full
+              lg:w-4/5
+              px-4
+              ml-auto
+              mr-auto
+              justify-center
+              text-center
+            "
+            
+          >
+            <div class="  rounded-md sm:bg-transparent">
+              
+              
+              <p class="RPM-sub mt-4 text-black" >
 
+              <div>
 
-
-
-
-                {/* HashLips Minting box */}
-{/*                 
     <div class="" style={{
               backgroundColor: "rgba(0,0,0,0.8)",
               padding: 2,
@@ -485,7 +499,25 @@ function App() {
               
             )}
             </div>
-           */}
+           
+
+            </div>
+
+
+
+</p>
+
+
+</div>
+</div>
+</div>
+</div> 
+ 
+  */}
+
+ {/* Remove this line to turn on minting box* */}
+
+
 {/* end mint section */}
 
 

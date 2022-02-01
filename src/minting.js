@@ -1,28 +1,167 @@
+
+
+
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./style/globalStyles";
-// import styled from "styled-components";
-// import './fontawesome';
-// import NavBar from "./Nav";
-// import { FontAwesome, FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
-// import { faRocket } from "@fortawesome/free-solid-svg-icons";
-// import { faCheese } from "@fortawesome/free-solid-svg-icons";
-// import { faFingerprint } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
+import './fontawesome';
+import NavBar from "./Nav";
+import { FontAwesome, FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
+import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import { faCheese } from "@fortawesome/free-solid-svg-icons";
+import { faFingerprint } from "@fortawesome/free-solid-svg-icons";
 
 
 
 import { faFlagCheckered } from "@fortawesome/free-solid-svg-icons";
+
+const truncate = (input, len) =>
+  input.length > len ? `${input.substring(0, len)}...` : input;
+
+
+export const StyledButton = styled.button`
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--secondary);
+  padding: 10px;
+  font-weight: bold;
+  color: var(--secondary-text);
+  width: 100px;
+  cursor: pointer;
+  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  :active {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+`;
+
+export const StyledLink = styled.a`
+  color: var(--secondary);
+  text-decoration: none;
+`;
+
+
+
+function Minting() {
+    const dispatch = useDispatch();
+    const blockchain = useSelector((state) => state.blockchain);
+    const data = useSelector((state) => state.data);
+    const [claimingNft, setClaimingNft] = useState(false);
+    const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+    const [mintAmount, setMintAmount] = useState(1);
+    const [CONFIG, SET_CONFIG] = useState({
+      CONTRACT_ADDRESS: "",
+      SCAN_LINK: "",
+      NETWORK: {
+        NAME: "",
+        SYMBOL: "",
+        ID: 0,
+      },
+      NFT_NAME: "",
+      SYMBOL: "",
+      MAX_SUPPLY: 1,
+      WEI_COST: 0,
+      DISPLAY_COST: 2022,
+      GAS_LIMIT: 0,
+      MARKETPLACE: "",
+      MARKETPLACE_LINK: "",
+      SHOW_BACKGROUND: false,
+    });
+
+
+    const claimNFTs = () => {
+        let cost = CONFIG.WEI_COST;
+        let gasLimit = CONFIG.GAS_LIMIT;
+        let totalCostWei = String(cost * mintAmount);
+        let totalGasLimit = String(gasLimit * mintAmount);
+        console.log("Cost: ", totalCostWei);
+        console.log("Gas limit: ", totalGasLimit);
+        setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
+        setClaimingNft(true);
+        blockchain.smartContract.methods
+          .mint(mintAmount)
+          .send({
+            gasLimit: String(totalGasLimit),
+            to: CONFIG.CONTRACT_ADDRESS,
+            from: blockchain.account,
+            value: totalCostWei,
+          })
+          .once("error", (err) => {
+            console.log(err);
+            setFeedback("Sorry, something went wrong please try again later.");
+            setClaimingNft(false);
+          })
+          .then((receipt) => {
+            console.log(receipt);
+            setFeedback(
+              `WOW, the ${CONFIG.NFT_NAME} is yours! go visit NFTKEY.app to view it.`
+            );
+            setClaimingNft(false);
+            dispatch(fetchData(blockchain.account));
+          });
+      };
+    
+      const decrementMintAmount = () => {
+        let newMintAmount = mintAmount - 1;
+        if (newMintAmount < 1) {
+          newMintAmount = 1;
+        }
+        setMintAmount(newMintAmount);
+      };
+    
+      const incrementMintAmount = () => {
+        let newMintAmount = mintAmount + 1;
+        if (newMintAmount > 10) {
+          newMintAmount = 10;
+        }
+        setMintAmount(newMintAmount);
+      };
+    
+      const getData = () => {
+        if (blockchain.account !== "" && blockchain.smartContract !== null) {
+          dispatch(fetchData(blockchain.account));
+        }
+      };
+    
+      const getConfig = async () => {
+        const configResponse = await fetch("/config/config.json", {
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        });
+        const config = await configResponse.json();
+        SET_CONFIG(config);
+      };
+    
+      useEffect(() => {
+        getConfig();
+      }, []);
+    
+      useEffect(() => {
+        getData();
+      }, [blockchain.account]);
+    
+
+
+
+
 // import { Transition } from "@headlessui/react";
 
 {/* HashLips Minting box */}
-  
 
-function Minting() {
-    const [isOpen, setIsOpen] = useState(false);
+
+
     return (
+
     <div class="" style={{
               backgroundColor: "rgba(0,0,0,0.8)",
               padding: 2,
@@ -199,7 +338,6 @@ function Minting() {
               
             )}
             </div>
-           
   );
 }
 
