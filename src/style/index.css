@@ -65,10 +65,13 @@ ul {
 
 
 .bgimagetop img{
-    width:500px;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    width:400px;
 }
 .bgimagebot img{
-    width:500px;
+    width:400px;
 
 }
 #bgimage{
@@ -76,9 +79,9 @@ ul {
     margin:0px !important;
     opacity: .75;
     background-size:350px;
-    height:690px;
+    height:800px;
     background-color:black;
-    /* background-image: url("../images/bg_image.jpg"); */
+    background-image: url("../images/bg_image.jpg");
     
 }
 .bgimagebot{

@@ -271,19 +271,19 @@ function App() {
         items-center
         justify-center
       "
-      style={{"min-height": "690px"}}
+      style={{"min-height": "800px"}}
     >
 
 
 
 
       <div id="bgimage" class="absolute top-0 w-full h-full bg-left bg-cover bg-gray" >
-        {/* <div class="bgimagetop">  */}
-         {/* <img src="/config/images/family_pic_top.png" class="" /> 
+        <div class="bgimagetop"> 
+         <img src="/config/images/RP_bg6.png" class="" /> 
         </div>
-        <div class="bgimagebot">
-         <img src="/config/images/family_pic_bottom.png" class=""/> 
-        </div> */}
+        {/* <div class="bgimagebot"> */}
+         {/* <img src="/config/images/family_pic_bottom.png" class=""/>  */}
+        {/* </div>  */}
       </div>
      
      
@@ -353,10 +353,10 @@ function App() {
                 "
               >
                 
-                Invading the barn Soon on 
+                Invading the barn Soon  
                 <s.SpacerMedium />
                 
-                The Avalanche Network!
+                on The Avalanche Network!
                 
               </h1>
                
