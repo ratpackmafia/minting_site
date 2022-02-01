@@ -644,8 +644,8 @@ function App() {
             <p
               class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-200"
             >
-              Rat Pack is a Family of Rats created by <a href ="https://twitter.com/Zombiestiltskin"> ZombieStiltskin </a> who are carving out a place in the
-              world, fighting their way to the top.  
+              Rat Pack is a Family of Rats created with love by <a href ="https://twitter.com/Zombiestiltskin"> ZombieStiltskin.</a> Join us as we carve out a place in the
+              world, fighting our way to the top.  
             </p>
           </div>
           <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
