@@ -74,6 +74,7 @@ ul {
 
 .bgimagetop img{
 /* width:30%; */
+padding-top:15px;
 height:500px;
 position: absolute;
 bottom:0;
